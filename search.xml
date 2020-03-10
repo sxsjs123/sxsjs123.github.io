@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>学习C语言（一）</title>
+    <url>/2020/03/10/2020-03-10c/</url>
+    <content><![CDATA[<p>逆序的三位数（5分）</p>
+<p><strong>题目内容：</strong></p>
+<p>逆序的三位数：程序每次读入一个正三位数，然后输出逆序的数字。注意，当输入的数字含有结尾的0时，输出不应带有前导的0。比如输入700，输出应该是7。</p>
+<p>提示：用%10可以得到个位数，用/100可以得到百位数…。将这样得到的三个数字合起来：百位<em>100+十位</em>10+个位，就得到了结果。</p>
+<p><strong>注意：除了题目要求的输出，不能输出任何其他内容，比如输入时的提示，输出时的说明等等都不能。这道题目要求输出逆序的数字，程序就只能输出这个数字，除此之外任何内容都不能输出。*</strong></p>
+<p><strong>输入格式:</strong></p>
+<p>每个测试是一个3位的正整数。</p>
+<p><strong>输出格式：</strong></p>
+<p>输出逆序的数。</p>
+<p><strong>输入样例：</strong></p>
+<p>123</p>
+<p><strong>输出样例：</strong></p>
+<p>321</p>
+<p>时间限制：500ms内存限制：32000kb</p>
+<p><code>\#include&lt;stdio.h&gt;</code><br><code>int main()</code><br><code>{</code><br><code>int a,b,c,d;</code><br><code>scanf(&quot;%d&quot;,&amp;a);</code><br><code>b=a/100;</code><br><code>c=(a/10)%10;</code><br><code>d=a%10;</code><br><code>a=d*100+c*10+b;</code><br><code>printf(&quot;%d&quot;,a);</code><br><code>return 0;</code><br><code>}</code></p>
+]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>C语言</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo</title>
     <url>/2020/03/09/2020-03-09-hexo/</url>
     <content><![CDATA[<h2 id="（转载）前言："><a href="#（转载）前言：" class="headerlink" title="（转载）前言："></a><strong>（转载）前言：</strong></h2><p>随着互联网浪潮的翻腾，国内外涌现出越来越多优秀的社交网站让用户分享信息更加便捷。然后，如果你是一个不甘寂寞的程序猿（媛），是否也想要搭建一个属于自己的个人网站，如果你曾经或者现在正有这样的想法，请跟随这篇文章发挥你的Geek精神，让你快速拥有自己的博客网站，写文章记录生活，享受这种从0到1的过程。</p>
