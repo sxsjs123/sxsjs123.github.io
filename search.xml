@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>关于博客的Bug</title>
+    <url>/2021/03/11/20200311-bug/</url>
+    <content><![CDATA[<h1 id="（手动置顶）QAQ-！！！哈哈哈"><a href="#（手动置顶）QAQ-！！！哈哈哈" class="headerlink" title="（手动置顶）QAQ ！！！哈哈哈"></a>（手动置顶）QAQ ！！！哈哈哈</h1><h1 id="历时快一个星期-从-2020-03-07-到2020-03-11-网站的Bug基本解决了。"><a href="#历时快一个星期-从-2020-03-07-到2020-03-11-网站的Bug基本解决了。" class="headerlink" title="历时快一个星期    从 2020-03-07  到2020-03-11 网站的Bug基本解决了。"></a>历时快一个星期    从 2020-03-07  到2020-03-11 网站的Bug基本解决了。</h1><h4 id="头发都快掉光了，QAQ-哎-！-暂时就这样吧-。暂时不会找bug了-，平常就写点文章吧。"><a href="#头发都快掉光了，QAQ-哎-！-暂时就这样吧-。暂时不会找bug了-，平常就写点文章吧。" class="headerlink" title="头发都快掉光了，QAQ  哎 ！ 暂时就这样吧 。暂时不会找bug了 ，平常就写点文章吧。"></a>头发都快掉光了，QAQ  哎 ！ 暂时就这样吧 。暂时不会找bug了 ，平常就写点文章吧。</h4><h4 id="开始-学习了不然就拉下。真不想学啊-！！！！"><a href="#开始-学习了不然就拉下。真不想学啊-！！！！" class="headerlink" title="开始  学习了不然就拉下。真不想学啊 ！！！！"></a>开始  学习了不然就拉下。真不想学啊 ！！！！</h4>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我喜欢的音乐</title>
+    <url>/2020/03/11/20200311-music/</url>
+    <content><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=474739193&auto=1&height=66"></iframe>]]></content>
+      <tags>
+        <tag>我喜欢的音乐</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Github自定义域名问题</title>
-    <url>/2020/03/11/20200311a/</url>
+    <url>/2020/03/11/20200311-yuming/</url>
     <content><![CDATA[<p>利用GitHub搭建博客自定义域名失效问题解决方法</p>
 <p>自定义域名每次“hexo d”后会失效，参考网上的解决方法有两种</p>
 <pre><code> 解决方法一：
