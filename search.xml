@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Github自定义域名问题</title>
+    <url>/2020/03/11/20200311a/</url>
+    <content><![CDATA[<p>利用GitHub搭建博客自定义域名失效问题解决方法</p>
+<p>自定义域名每次“hexo d”后会失效，参考网上的解决方法有两种</p>
+<pre><code> 解决方法一：
+
+只要在source 目录添加一个新文件CNAME就好
+
+CNAME –不带任何后缀，这就是全称，里面写的是你的域名
+
+ 解决方法二：
+
+ 安装插件
+
+ npm install hexo-generator-cname --save
+ 之后在_config.yml中添加一条
+
+  Plugins:</code></pre><ul>
+<li><p>hexo-generator-cname<br>可能，发现第一个解决方法不能用，其实原因很简单</p>
+<pre><code>你把解决方法二里面的插件也安装啦，两个有冲突，只需要执行
+
+npm uninstall hexo-generator-cname --save</code></pre><p>  然后，按照第一个解决方法完全OK！</p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>网站</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>学习C语言（一）</title>
     <url>/2020/03/10/2020-03-10c/</url>
     <content><![CDATA[<p>逆序的三位数（5分）</p>
