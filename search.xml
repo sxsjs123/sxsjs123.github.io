@@ -13,8 +13,85 @@
       </tags>
   </entry>
   <entry>
+    <title>20200319-win10</title>
+    <url>/2020/03/19/20200319-win10/</url>
+    <content><![CDATA[<h1 id="win10-企业版LTSC-激活方式-亲测有效"><a href="#win10-企业版LTSC-激活方式-亲测有效" class="headerlink" title="win10 企业版LTSC 激活方式-亲测有效"></a>win10 企业版LTSC 激活方式-亲测有效</h1><h2 id="Windows-10-Enterprise-LTSC-2019-x64-DVD-Chinese-Simplified"><a href="#Windows-10-Enterprise-LTSC-2019-x64-DVD-Chinese-Simplified" class="headerlink" title="Windows 10 Enterprise LTSC 2019 (x64) - DVD (Chinese-Simplified)"></a>Windows 10 Enterprise LTSC 2019 (x64) - DVD (Chinese-Simplified)</h2><ul>
+<li><p>文件名</p>
+<p>cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso</p>
+</li>
+<li><p>SHA1</p>
+<p>24b59706d5eded392423936c82ba5a83596b50cc</p>
+</li>
+<li><p>文件大小</p>
+<p>4.17GB</p>
+</li>
+<li><p>发布时间</p>
+<p>2019-03-15</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ed2k:&#x2F;&#x2F;|file|cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso|4478906368|E7C526499308841A4A6D116C857DB669|&#x2F;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Windows-10-Enterprise-LTSC-2019-x86-DVD-Chinese-Simplified"><a href="#Windows-10-Enterprise-LTSC-2019-x86-DVD-Chinese-Simplified" class="headerlink" title="Windows 10 Enterprise LTSC 2019 (x86) - DVD (Chinese-Simplified)"></a>Windows 10 Enterprise LTSC 2019 (x86) - DVD (Chinese-Simplified)</h2><ul>
+<li><p>文件名</p>
+<p>cn_windows_10_enterprise_ltsc_2019_x86_dvd_1814dbab.iso</p>
+</li>
+<li><p>SHA1</p>
+<p>ba2169edd94f123211cd4aaca68352f1ab6195d9</p>
+</li>
+<li><p>文件大小</p>
+<p>2.98GB</p>
+</li>
+<li><p>发布时间</p>
+<p>2019-03-15</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ed2k:&#x2F;&#x2F;|file|cn_windows_10_enterprise_ltsc_2019_x86_dvd_1814dbab.iso|3196803072|2D39C54A2E99BAC308191C74A15B3237|&#x2F;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="激活步骤："><a href="#激活步骤：" class="headerlink" title="激活步骤："></a>激活步骤：</h2><p><strong>用cmd管理员身份一步一步执行</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">slmgr &#x2F;ipk NPPR9-FWDCX-D2C8J-H872K-2YT43</span><br><span class="line"></span><br><span class="line">slmgr -ipk NPPR9-FWDCX-D2C8J-H872K-2YT43</span><br><span class="line"></span><br><span class="line">slmgr -ipk M7XTQ-FN8P6-TTKYV-9D4CC-J462D</span><br><span class="line"></span><br><span class="line">slmgr -skms kms.03k.org</span><br><span class="line"></span><br><span class="line">slmgr -ato</span><br><span class="line"></span><br><span class="line">slmgr -dlv</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>电脑</category>
+      </categories>
+      <tags>
+        <tag>电脑系统</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>新买笔记本无法激活Office</title>
     <url>/2020/03/17/20200217-office/</url>
+    <content><![CDATA[<p>激活前先确保Windows系统正常激活，然后在激活2个小时之后尝试Office激活。如果遇到无法激活问题，再尝试以下任意一种方案。</p>
+<p><strong>方案1</strong></p>
+<p>下载工具：<a href="http://aka.ms/diag_97275" target="_blank" rel="noopener">http://aka.ms/diag_97275</a></p>
+<p>执行“下一步”进行修复。</p>
+<p><strong>方案2</strong></p>
+<p>修改注册表</p>
+<p><strong>1、关闭所有Office应用程序（包括所有Office设置窗口）</strong></p>
+<p><strong>2、同时按下键盘上的Windows键和R键打开“运行”窗口</strong></p>
+<p><strong>3、渐入regedit，然后单击确定</strong></p>
+<p><strong>4、如果出现“用户帐户控制”窗口，单击“是”，然后继续</strong></p>
+<p><strong>5、使用左侧窗格中的文件夹结构导航到以下两个位置，如果第二个位置不存在，可忽略。</strong></p>
+<p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\16.0\Common\OEM\OOBEMode</p>
+<p>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\16.0\Common\OEM\OOBEMode</p>
+<p>对于这两个位置，都请双击右侧窗格中的注册表项，以更改其值。</p>
+<p>对于这两个位置，都将其值从OEM更改为OEMTA并单击确定，然后关闭注册表编辑器。</p>
+<p>需要注意的是，请确保Windows已激活并且可访问Internet，然后启动任意Office应用程序以重新启动Office安装向导。</p>
+<p><img src="https://s1.ax1x.com/2020/03/17/8tLKLF.jpg" alt=""></p>
+]]></content>
+      <categories>
+        <category>办公</category>
+        <category>电脑</category>
+      </categories>
+      <tags>
+        <tag>office</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新买笔记本无法激活Office</title>
+    <url>/2020/03/17/20200317-office/</url>
     <content><![CDATA[<p>激活前先确保Windows系统正常激活，然后在激活2个小时之后尝试Office激活。如果遇到无法激活问题，再尝试以下任意一种方案。</p>
 <p><strong>方案1</strong></p>
 <p>下载工具：<a href="http://aka.ms/diag_97275" target="_blank" rel="noopener">http://aka.ms/diag_97275</a></p>
