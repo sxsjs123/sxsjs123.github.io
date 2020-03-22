@@ -13,6 +13,30 @@
       </tags>
   </entry>
   <entry>
+    <title>去除Windows10桌面快捷方式的小箭头</title>
+    <url>/2020/03/22/20200322-win10/</url>
+    <content><![CDATA[<h1 id="去除Windows10桌面快捷方式的小箭头"><a href="#去除Windows10桌面快捷方式的小箭头" class="headerlink" title="去除Windows10桌面快捷方式的小箭头"></a>去除Windows10桌面快捷方式的小箭头</h1><ol>
+<li><p>去除小箭头</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; &#x2F;v 29 &#x2F;d &quot;%systemroot%\system32\imageres.dll,197&quot; &#x2F;t reg_sz &#x2F;f</span><br><span class="line">taskkill &#x2F;f &#x2F;im explorer.exe</span><br><span class="line">attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;</span><br><span class="line">del &quot;%userprofile%\AppData\Local\iconcache.db&quot; &#x2F;f &#x2F;q</span><br><span class="line">start explorer</span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
+
+<p>新建文本文档，复制以上代码，粘贴到文本文档中保存，重命名该文档，将.后缀.txt改为<code>.bat保存，右键选择**以管理员的身份运行该</code>.bat<code>文件**，运行完成小箭头就消失啦。</code></p>
+</li>
+<li><p>恢复小箭头</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">reg delete &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; &#x2F;v 29 &#x2F;f</span><br><span class="line">taskkill &#x2F;f &#x2F;im explorer.exe</span><br><span class="line">attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;</span><br><span class="line">del &quot;%userprofile%\AppData\Local\iconcache.db&quot; &#x2F;f &#x2F;q</span><br><span class="line">start explorer</span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
+
+<p>使用方法同上。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>电脑</category>
+      </categories>
+      <tags>
+        <tag>电脑</tag>
+        <tag>win10</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>win10 企业版LTSC 激活方式</title>
     <url>/2020/03/19/20200319-win10/</url>
     <content><![CDATA[<h1 id="win10-企业版LTSC-激活方式-亲测有效"><a href="#win10-企业版LTSC-激活方式-亲测有效" class="headerlink" title="win10 企业版LTSC 激活方式-亲测有效"></a>win10 企业版LTSC 激活方式-亲测有效</h1><h2 id="Windows-10-Enterprise-LTSC-2019-x64-DVD-Chinese-Simplified"><a href="#Windows-10-Enterprise-LTSC-2019-x64-DVD-Chinese-Simplified" class="headerlink" title="Windows 10 Enterprise LTSC 2019 (x64) - DVD (Chinese-Simplified)"></a>Windows 10 Enterprise LTSC 2019 (x64) - DVD (Chinese-Simplified)</h2><ul>
