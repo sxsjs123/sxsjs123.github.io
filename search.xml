@@ -13,7 +13,7 @@
       </tags>
   </entry>
   <entry>
-    <title>20200319-win10</title>
+    <title>win10 企业版LTSC 激活方式</title>
     <url>/2020/03/19/20200319-win10/</url>
     <content><![CDATA[<h1 id="win10-企业版LTSC-激活方式-亲测有效"><a href="#win10-企业版LTSC-激活方式-亲测有效" class="headerlink" title="win10 企业版LTSC 激活方式-亲测有效"></a>win10 企业版LTSC 激活方式-亲测有效</h1><h2 id="Windows-10-Enterprise-LTSC-2019-x64-DVD-Chinese-Simplified"><a href="#Windows-10-Enterprise-LTSC-2019-x64-DVD-Chinese-Simplified" class="headerlink" title="Windows 10 Enterprise LTSC 2019 (x64) - DVD (Chinese-Simplified)"></a>Windows 10 Enterprise LTSC 2019 (x64) - DVD (Chinese-Simplified)</h2><ul>
 <li><p>文件名</p>
@@ -63,35 +63,6 @@
   <entry>
     <title>新买笔记本无法激活Office</title>
     <url>/2020/03/17/20200217-office/</url>
-    <content><![CDATA[<p>激活前先确保Windows系统正常激活，然后在激活2个小时之后尝试Office激活。如果遇到无法激活问题，再尝试以下任意一种方案。</p>
-<p><strong>方案1</strong></p>
-<p>下载工具：<a href="http://aka.ms/diag_97275" target="_blank" rel="noopener">http://aka.ms/diag_97275</a></p>
-<p>执行“下一步”进行修复。</p>
-<p><strong>方案2</strong></p>
-<p>修改注册表</p>
-<p><strong>1、关闭所有Office应用程序（包括所有Office设置窗口）</strong></p>
-<p><strong>2、同时按下键盘上的Windows键和R键打开“运行”窗口</strong></p>
-<p><strong>3、渐入regedit，然后单击确定</strong></p>
-<p><strong>4、如果出现“用户帐户控制”窗口，单击“是”，然后继续</strong></p>
-<p><strong>5、使用左侧窗格中的文件夹结构导航到以下两个位置，如果第二个位置不存在，可忽略。</strong></p>
-<p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\16.0\Common\OEM\OOBEMode</p>
-<p>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\16.0\Common\OEM\OOBEMode</p>
-<p>对于这两个位置，都请双击右侧窗格中的注册表项，以更改其值。</p>
-<p>对于这两个位置，都将其值从OEM更改为OEMTA并单击确定，然后关闭注册表编辑器。</p>
-<p>需要注意的是，请确保Windows已激活并且可访问Internet，然后启动任意Office应用程序以重新启动Office安装向导。</p>
-<p><img src="https://s1.ax1x.com/2020/03/17/8tLKLF.jpg" alt=""></p>
-]]></content>
-      <categories>
-        <category>办公</category>
-        <category>电脑</category>
-      </categories>
-      <tags>
-        <tag>office</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>新买笔记本无法激活Office</title>
-    <url>/2020/03/17/20200317-office/</url>
     <content><![CDATA[<p>激活前先确保Windows系统正常激活，然后在激活2个小时之后尝试Office激活。如果遇到无法激活问题，再尝试以下任意一种方案。</p>
 <p><strong>方案1</strong></p>
 <p>下载工具：<a href="http://aka.ms/diag_97275" target="_blank" rel="noopener">http://aka.ms/diag_97275</a></p>
