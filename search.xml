@@ -13,6 +13,40 @@
       </tags>
   </entry>
   <entry>
+    <title>我的世界开服务器教程</title>
+    <url>/2020/08/24/2020-08-24-MC/</url>
+    <content><![CDATA[<h1 id="适用于centos7（前提你要会一些服务器的基本操作）"><a href="#适用于centos7（前提你要会一些服务器的基本操作）" class="headerlink" title="适用于centos7（前提你要会一些服务器的基本操作）"></a>适用于centos7（前提你要会一些服务器的基本操作）</h1><p>​     记得打开服务商25565端口</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install java-1.8.0-openjdk.x86_64</span><br></pre></td></tr></table></figure>
+
+<p>Screen</p>
+<p>这玩意是一个虚拟终端，可以让命令在后台运行。 </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install screen</span><br></pre></td></tr></table></figure>
+
+<p>它有很多用法，我最常用就这几个:</p>
+<p>它有很多用法，我最常用就这几个:</p>
+<p>screen -S screenname #新建一个叫screenname的screen会话<br>screen -ls #列出当前所有的screen会话<br>screen -r #恢复上一次离线的会话<br>screen -x [会话id] #恢复指定id的会话，id可通过 screen -ls 查看<br>screen -d #离线（不是关闭）当前会话<br>#离线会话还可以通过快捷键C-a d完成（先按组合键Ctrl+a,再按d）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">firewall-cmd --zone&#x3D;public --add-port&#x3D;25565&#x2F;udp --permanent</span><br><span class="line">firewall-cmd --zone&#x3D;public --add-port&#x3D;25565&#x2F;tcp --permanent</span><br><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+
+<p>server.jar文件自己去<a href="https://www.minecraft.net/zh-hans/download" target="_blank" rel="noopener">mc官网</a>下  下了文件名不对记得改一下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">java -Xms521m -Xmx1024m -jar server.jar nogui</span><br></pre></td></tr></table></figure>
+
+<p>第一次会失败，编辑配置文件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim eula.txt</span><br></pre></td></tr></table></figure>
+
+<p>  //按i键进入编辑模式，把 false 改为 true<br>eula=true</p>
+<p>vim server.propertices  // 把正版验证服务online-mode改为 false<br>online-mode:false </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">java -Xms521m -Xmx1024m -jar server.jar nogui</span><br></pre></td></tr></table></figure>
+
+<p>-Xms521m   最小内存     -Xmx1024m  最大内存</p>
+]]></content>
+      <categories>
+        <category>电脑</category>
+      </categories>
+      <tags>
+        <tag>服务器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Aria2</title>
     <url>/2020/05/24/2020-05-24-Aria2/</url>
     <content><![CDATA[<h1 id="利用Heroku部署Aria2离线下载并上传至OneDrive"><a href="#利用Heroku部署Aria2离线下载并上传至OneDrive" class="headerlink" title="利用Heroku部署Aria2离线下载并上传至OneDrive"></a><a href="https://aroins.com/67" target="_blank" rel="noopener">利用Heroku部署Aria2离线下载并上传至OneDrive</a></h1><h2 id="转自-https-aroins-com-67"><a href="#转自-https-aroins-com-67" class="headerlink" title="转自     https://aroins.com/67"></a>转自     <a href="https://aroins.com/67" target="_blank" rel="noopener">https://aroins.com/67</a></h2><h2 id="转自-https-aroins-com-67-1"><a href="#转自-https-aroins-com-67-1" class="headerlink" title="转自     https://aroins.com/67"></a>转自     <a href="https://aroins.com/67" target="_blank" rel="noopener">https://aroins.com/67</a></h2><ul>
