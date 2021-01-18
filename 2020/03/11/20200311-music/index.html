@@ -79,12 +79,14 @@
 
 
 
+<meta name="description" content="var blog_running_days&#x3D;document.getElementById(&quot;blog_running_days&quot;); var blog_running_hours&#x3D;document.getElementById(&quot;blog_running_hours&quot;); var blog_running_mins&#x3D;document.getElementById(&quot;blog_running_m">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我喜欢的音乐">
 <meta property="og:url" content="http://sxsjs123.xyz/2020/03/11/20200311-music/index.html">
 <meta property="og:site_name" content="空白">
+<meta property="og:description" content="var blog_running_days&#x3D;document.getElementById(&quot;blog_running_days&quot;); var blog_running_hours&#x3D;document.getElementById(&quot;blog_running_hours&quot;); var blog_running_mins&#x3D;document.getElementById(&quot;blog_running_m">
 <meta property="article:published_time" content="2020-03-11T09:13:19.000Z">
-<meta property="article:modified_time" content="2020-03-11T09:41:34.068Z">
+<meta property="article:modified_time" content="2021-01-05T11:14:33.584Z">
 <meta property="article:author" content="空白">
 <meta property="article:tag" content="我喜欢的音乐">
 <meta name="twitter:card" content="summary">
@@ -379,7 +381,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  93
                 </span>
               
 
@@ -416,7 +418,30 @@
       
 
       
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=474739193&auto=1&height=66"></iframe>
+        <script no-pjax="">
+var blog_running_days=document.getElementById("blog_running_days");
+var blog_running_hours=document.getElementById("blog_running_hours");
+var blog_running_mins=document.getElementById("blog_running_mins");
+var blog_running_secs=document.getElementById("blog_running_secs");
+function refresh_blog_running_time(){
+    var time = new Date() - new Date(2019, 1, 10, 8, 0, 0);
+    var d=parseInt(time/24/60/60/1000);
+    var h=parseInt(time%(24*60*60*1000)/60/60/1000);
+    var m=parseInt(time%(60*60*1000)/60/1000);
+    var s=parseInt(time%(60*1000)/1000);
+    blog_running_days.innerHTML=d;
+    blog_running_hours.innerHTML=h;
+    blog_running_mins.innerHTML=m;
+    blog_running_secs.innerHTML=s;
+}
+refresh_blog_running_time();
+if (typeof(bottomTimeIntervalHasSet) == "undefined"){
+    var bottomTimeIntervalHasSet = true;
+    setInterval(function(){refresh_blog_running_time();},500);
+}
+</script>
+
+
       
     </div>
     
@@ -532,7 +557,7 @@
              
                 <a href="/archives">
               
-                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-count">23</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -615,7 +640,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
