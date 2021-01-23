@@ -1,1187 +1,487 @@
 <!DOCTYPE html>
-
-
-
+<html lang="zh-CN">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="">
+  <title>V2ray | 空白世界</title>
+  <meta name="author" content="空白" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
   
-
-
-<html class="theme-next gemini use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <meta name="keywords" content="科学上网" />
   
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="科学上网," />
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="欢迎来到我的博客, 此文章为加密文章,请输入密码查看.">
+  <meta name="description" content="欢迎来到我的博客, 此文章为加密文章,请输入密码查看.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="V2ray">
 <meta property="og:url" content="http://sxsjs123.xyz/2020/03/09/2020-03-09-v2ray/index.html">
-<meta property="og:site_name" content="空白">
+<meta property="og:site_name" content="空白世界">
 <meta property="og:description" content="欢迎来到我的博客, 此文章为加密文章,请输入密码查看.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://sxsjs123.xyz/null">
 <meta property="article:published_time" content="2020-03-08T16:34:25.000Z">
 <meta property="article:modified_time" content="2020-03-18T14:04:01.242Z">
 <meta property="article:author" content="空白">
 <meta property="article:tag" content="科学上网">
 <meta name="twitter:card" content="summary">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Gemini',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-
-  <link rel="canonical" href="http://sxsjs123.xyz/2020/03/09/2020-03-09-v2ray/"/>
-
-
-
-
-
-  <title>V2ray | 空白</title>
+<meta name="twitter:image" content="http://sxsjs123.xyz/null">
+<meta name="twitter:site" content="@null">
   
-
-
-
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-176043713-3', 'auto');
-  ga('send', 'pageview');
-</script>
-
-
-
-
-
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight.min.css" type="text/css" media="all">
+  
+  
+  <link rel="stylesheet" id="fontawe-css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="nprogress-css" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" type="text/css" media="all">
+  
+  
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-dark.min.css" type="text/css" media="all">
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
 <meta name="generator" content="Hexo 4.2.0"></head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  
-  
-    
-  
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <div class="nav-toggle"><a class="kratos-nav-toggle js-kratos-nav-toggle"><i></i></a></div>
+            <header id="kratos-header-section">
+                <div class="container">
+                    <div class="nav-header">
+                        <div class="color-logo"><a href="/">空白世界</a></div>
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                        <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+                                    
+                                
+                                    
+                                        <li><a href="/archives/"><i class="fa fa-file"></i>档案馆</a></li>
+                                    
+                                
+                                    
+                                        <li><a href="/about/"><i class="fa fa-paper-plane"></i>关于我</a></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a><i class="fa fa-link"></i>链接</a>
+                                            <ul class="sub-menu">
+                                                
+                                                    
+                                                
+                                                    
+                                                        <li><a href="https://candinya.com" target="_blank" rel="noopener">作者博客</a></li>
+                                                    
+                                                
+                                                    
+                                                        <li><a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank" rel="noopener">项目链接</a></li>
+                                                    
+                                                
+                                            </ul>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>空白世界</h2> <br />
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-  <div class="container sidebar-position-left page-post-detail">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">空白</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div class="row">
+                    
+        <div id="main">
+            <section class="col-md-8">
+    <article>
+        <div class="kratos-hentry kratos-post-inner clearfix">
+            <header class="kratos-entry-header">
+                <h1 class="kratos-entry-title text-center">V2ray</h1>
+                
+                <div class="kratos-post-meta text-center">
+                    <span>
+                        <i class="fa fa-calendar"></i> 2020-03-09
+                        <i class="fa fa-folder"></i> 分类 
+                        <i class="fa fa-user"></i> 作者 空白
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            ~4.49K
+                        
+                        字
+                        
+                    </span>
+                </div>
+            </header>
+            <div class="kratos-post-content">
+                <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                    本文最后编辑于 <time datetime="1584540241242"></time> 前，其中的内容可能需要更新。
+                </div>
+                
+                <hr />
+                <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="95ccc43b56e31a622162e0b7a963b9c241d8a0069684f7f731da68f825554308">1c826a5b8c8803c33e2e6d72d3a1bc6fce5a4c34d44a24afeee3b93b660ae328f491cfb0f23febc872fb50959d7c6d78a7079b39f299d6f517cd1bf07b0d20f1affb9359c4126b452c7f53d924cfd287f770dbeb8702d603146f2ce1d38b8fedfb00a3f11790f994333ee26a5c3f9f9a18dc230a80a831775e2b3928e910252ccb10dc797038c0d703d14a22dad3cd0b10be786519b8e8c6fc523e5e9cfb602dd42c37ad427ef439dd150f5cdf92f6be2b07b52b4c7edbff428f9d4a882fd3dff055c06f600c6c2f16d37fa684e88c63740d7c633e3d69d154b33bfeb4acb3352d918b39a2f8e197a9bfd846cea6566e7cc13aa8301beb062ee51d5d3b92d354e30c6c85fe169d031c928fb7730dc30e0df3554fda09a76c5b93104fe90b6ec278e16c068d8e9144211e0fdef7abf7f01348fdabd7a7086402cf27c631acbc7bf20d0014b71c427089b9435c19488b98cce24a6bee6c99b6ebca1647c25539dc0fc3e299f313407e5e53ea82c4022725f2c9ad5a049c8f1d305d840e9b6f4a114f89897935943db242015d9cedac37cb22d27a33d497661b67884b20cb257ed8382fb1243570297365db509de8714ec39e246fa583893c15bd9bd2f5cf44796f24157f3fc13f354ddb8e1755d1b9e3420a199eec1a53f34fafe2551c5259f70753296106de2836d92c88a109bdd81d3a625372251128788b949b5979edf762291ddbee15fac9ec20e987055f1066f564c6edfe149e7f63858bd0705cd3172e63d985b25e0095b3106ee0c11800f243dd48395d1bb8d4546af4ea9109aa29ccf70d6ba3af4f506e9f36b8c6d96798b8ffd2c48e069d4f7643c079f0e1f60bd34aa4fc89fb8ed8c1d8f56c8bdb323af4f9c0eff26f82bceca51915fe1a8e1e1584a4a1f45abc801b6b7d040394bd0b4fb139223e6785546994df55e58d9af5996ddf77ce25f0ffef7f19c0cd01a90251f2a54751179a8a9b6defbf86a01195f95f3062ed54e9d6dee9d411e249b1baa8ebbf337cb92dc84460278af3abf641f9e6ec5fb97078f26b57f8bf68c05454fca2f7b81fa782d8ed0860eb25af483401b8dbb14f9cd7e21e423c1a35a7c0b7d913293a3066c443f99a75c0a6993acf94221d1133379073a627767273c684a8cd227c8307f581a39c9f9d7c233d58511f8c8b404ee051a1f33453ca9700607b7c97b2efb12c1c49adc717b7ca9298ffd021849fc80088784a05f0dcfef3ea9bb582302cff6262b64d2bcc35a584e864cd4ed05b458350864bdf17015ba809d23f462fb7ecae40e4ca00668b2db9d3c224fbe082817140694dc9699908a855ffc0ab83888b2d4a07806fea814bfd9aca98a386f53c906587dc1fd340a51ba099a58e67aa4c381d6c7d7311355d4123d4a2c6b76ff46a992c843391cdaec955f38a95de43a01f973da6648c5c48a9cc6b02bae5a00cfc0abcc51c167c5a3ce00d7c64463ec435d3814eb78ce3416337853ce1f58d325ddbb2befe282e1c3caa97f9e754be404b0c6ad07a188f625e1264e37940051f569221a4defe9633e91282b51756e2375560b8b0bef6a291ae15d084bdd8a944fe8af9382f8c73070a8c0396ae7bad0ac0bf84a194bbae72c3199354b75543440fe9dbe5a22dba61c8ad2325357dc72d1e71db6250f9b1568f4fa102ce45353a64803ebb0857560911354a6d4a60d61aca3f02e0684b84463355dfc1582c305285a2f15b3130bd3dd9381d01c6d24b7edc7b86956252d5549459c3f55f0840123d7fff57b26d80bc765b1bf9e0742443b068bf85a68573c0ae4b162c6f53c0164fcc7848d39711d3d675660d88d3079d2931c0ec06a1441d186ef23cfc51b69cbfff57c795e4e3cf5689d55101d5004a0d5e7c3f82abf31cb9ebac353e77cfcbf660a05e85ccc522c1bc05c1ec74b0849fde259b5722645ae41d5e535cd9c6c4346e7d4fee7039579c7a03e093a576a42f4717131f03635600438cbec0e0d9987d9dc48149101cf66b2f23f0605004bb3ea560b14d635cb28dbd930a3d1c52039b842449f3b55d3b63b9c2765ff4e84c6f5bfcc7964b991f60826488eb7ad03baee647c1adb3757136e2a618c395028ac5a8aceed52b99f8474c861ef5baab84b11f7e546b804049360b9066c89caf15a26c1e96fed5a94ef3895abe8a14036ce283e224cd8d0cd6c88165a7c49ece6a14d0ddd303b8a98808eb2bf316bf7947dceca5601055f6b4b9aee2daa7f0042d7f088bf23cdef77a40968f4862718ce8a84c0d2d9076e36c18543671d56ea36219e48842e1e76f7d74cad4a6f7fd5b42e9b1dfe2083b2a127866b5f4c3ad42dfd625bba2bf5e376394c12d12cea4edf9b265c8e74aea3c941c0b3c34e05b3394a752927997cafb64a4e1d9224e68a739affc5f8e36f89e9d4187387a61bd2e61b09b0af5a7430794e26501ca5cf0c0ce3a43cea0b8096280a95486f79b4d90424d93f93906836a2116403df8d49d719b3ae1e603575dc16fa9ab206b9f236c8036672127b9ee0146f35d2a9afb2fb413efbe0257843c4a287db71c7647b662e85a021b9e12a00160e4fd16aa2c72807a8fe9c71631d9fd6a495b9222d30e7352c61ed070e84738b0fb4baba17e211cf3e4489093218c32856c3c329c36b2c4b808828347a2cf5d668afe0968736cc9e84268e07ea8aab563ea9eb34d336da0f02e14ff1b85e058c0206acff44fa068a662fa461f654ccde533029a3ecaabb8508986d187c5f2a32c9f9a9d568d13dd36f05116b71c20436f3a4069f0eaa98a999772b3975d9ca38f90ce039d81d568e4b43df4261d9c11df88865a789f151e962ed565014b7c938c1e8e0ba1198757f7320066a0e018048ee34cb39e348f7e1f4b07b500eb772109931a0efc0e5e1b3ee303762fc61d7c28076e755d4fa5af256af3671a7ee95608f89b3f13edcf3d324ee0972693884f7df58231525eed082811c170435f894f4f5ba6d2e8837f9e61970742b94875d56842d5622644e78e47bdbef339ce894b325bc2ee140abff6b1e5cce4a9fd5b067ab8e459e15edf9d1cce1e4faa5c92d3fbc162961498d6335a56d3136a8649138c156ab8bac422d3d8cf895d9d554a74f1bd52d8b8bb</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">欢迎来到我的博客, 此文章为加密文章,请输入密码查看.</span>
+      </label>
     </div>
-      
-        <p class="site-subtitle">世界</p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
   </div>
 </div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+            </div>
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+                <div class="kratos-copyright text-center clearfix">
+                    <h5>本作品采用 <a rel="license nofollow" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
+                </div>
             
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-schedule">
-          <a href="/schedule/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
-            
-            日程表
-          </a>
-        </li>
-      
-
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
-        </li>
-      
-    </ul>
-  
-
-  
-    <div class="site-search">
-      
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
+            <footer class="kratos-entry-footer clearfix">
+                
+                    <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                    
+                    
+                        <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                        <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
     </div>
-  </div>
-  <div id="local-search-result"></div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "http://sxsjs123.xyz/2020/03/09/2020-03-09-v2ray/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "http://sxsjs123.xyz/2020/03/09/2020-03-09-v2ray/";
+            const title         = "「V2ray」";
+            const excerpt       = `欢迎来到我的博客, 此文章为加密文章,请输入密码查看.`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
 </div>
-
-
-
-    </div>
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
-    
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://sxsjs123.xyz/2020/03/09/2020-03-09-v2ray/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="空白">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="空白">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">V2ray</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-09T00:34:25+08:00">
-                2020-03-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-            <span class="post-meta-divider">|</span>
-            <span class="page-pv">本文总阅读数<i class="fa fa-file-o"></i>
-            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
-            </span>
-          
-
-          
-            <div class="post-wordcount">
-              
+                    
+                    </div>
                 
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  24
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <div class="hbe-input-container">
-  <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">欢迎来到我的博客, 此文章为加密文章,请输入密码查看.</label>
-    <div class="bottom-line"></div>
-  </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="a2527049ac0e66f693512fba6245110f1d0e7ef2507e2a7aa45d189be8273471">9e28f4c8b76b4ec7831947cb4668b7c7d093c85ee4d0ece86b321a86c86e733a99c6ea5c1f33bfa4892248cbb934d378d52dd837fb7116a48c2a70b9fee79d4a612fe82b4d21a242d761c7a06f969500205d94bef9567c2e2234967e5b99ce51f64c096f4e3882d30c5957eb87ba3a0b2a3482f055abd2bb4fcdf9a6a7eea23f3a9e6f4c4d516c1da330ec029f0779a840835fdc3df4f40064efe5ef0015467115ad63ba92d9e9cad9e1c975ae6337b11a477edde7ebf09a10a342fef87500c71796532ca790f0664954d669d5a42008b6343785f26b935a67d61a5d974896c792ba30c53a0086d7a83bfc1ad6442c4e326e06991c08912b1b283e1322d4024fb8ffeac8e3f9655f0e2327169a1552d64d963fbb6f97520973a3a909e4fd2a73b9e18060d06deaf214cdc7aed0cc89698464e7d363e7d24da546006702c0ba615f2d9b0a93308c850dabe58685c0181bf9871e4b9710cb7221e9f6dbbde34c4479733781266eb382743e6413852bb759236b3e5889842e291d4f560baa20905175f54ad6b6bbe68b3e814af46f9a2e28e0333e4fd9e079c49b12e0d04bb0f32f297e0b21a1a781690d00a222b7d8327722744d764f94dc57ec9e5255bff126f4c4a9dd385cf991f4bcebd07077201018b357bce127c8d8f8d63ccf5eda10b0ef43ef95e2bcc872a12a7512db58dbb286111c68ce27785efe25c1d94e5796f182a3537c7c246bfef54eec88f2022af79877acc5cd04a16faebcab9016911253faf66870218512cc9601c8476009ba2710152dd47e1906f07017f8b254d520a430e895c5cfb0165cf5ca415cafd6baec81f4a61103308f2e7e97a6e099c6bafd4c536e06af7d3cdaa409f4745e2c8b63c229b1a315d91527b2f506e12d38ad6a63631283bfd398f4405f02129fc21fb80af25b24a801799f63a435c7f773714f3a9acf571e1e4e0fe397f7fb5121246b409bca707712d69fd1278e221283db37bc0ce11c6f1a9855ac0c5e67134c9a6b3c67ba1e0b9c7db53acc2c8c5dafd27addd12cc581ba397fca00ae8da1ea1e21f2c4d53fdbfe10654636531fcfadeac21515e3d7ed82812ce6cf4c61ccf44a0123a06fbf2244b974738040f0870ebdb36ba4b0a4f19d7dcdc3192a1fbcc8d6e0fe82df6732e73bfcae6049d2f308610a027133d007712f7a3bd2629d4bab9fe94d66e9249ee883f03f6743e7814fe3526aef65b2192e0bbe708dc3c6ba351dbf4a58403b339aa8b89fc18cd4168e30ab196c23306b27e781c1fedd19b3ca41767cca2f04578ce3e354547709a373be60d2f45780dd1a94fbd37c8b11ad7d4ceb9df12c2f8fee15210a86d3dbded2ca0c5f62915600be385a2f09680bf6f1b95aba63bacd04d25acbaa8665172a47130e6044972cb28f16de3a5d8333a3a0dbd8dbad3bbd564275cbf429c9b677794baec67ccd744ced30ec322bdc397a7cc45768b60807b73585ca87bf6878407b6ac22aa26fdd015d86a69b4166c567fef8e7b3f73c49df3e39be247368ccf52fb43fa9ac6b33543a2e1e7f737c91e3f011d72495912c9020f98aac5b350552f105b4f472b6f11cd573e02d3cce308638a6c312f3b563282cf51fe2bd993c7014235745f667187112abd3cf65e9e250e5fa7310c4200b4de6fc7a74464579f1b6e38f6bf4656688f9dc75678694a773d8a9da5de725799c1f796ad94ecf0129333735aaf21b82af2833cf4aabdd1877eaaabb7166b760cf265d584e9cddfcc1f1df1bbe60d01c29c83782d5bfc3ebb892f0d35927145415d598bd7ab88d12d6b8d291dbf211c9a069729f5d65e455c58b7fe881e5c15bc2dc81fc337e0c417900a8f2b65b094d0f1a9ea47ed1c14c2de86744837b92433a35ce79e8fa0eeffd65cca4a85226d7dec2be73b1bb477896b3284ddb86f5b0aaaab0f36f352fa8b67ec57b8679fd528e8883603529d4c9f6f49f0154a876a31cbb9c24e59bb36bf9469c8a2a369441409cbeadafd8d63309132c045cb3d94f9b67bbec8fa79f0768d0e5946d88c05797abfd077d7176b2dbe6080c1533d793cdb10d6030c44c1819d74f6ca5ef96e0aa163a76a594067434f79e1fc405682d540775a03a2e1c79b9397b33b79d9c49b884d1ad30a2e628fc74a6c3573e8c2532c49abca19520924e522e5d15c303b908763314af52a51ecaf8660132338e6c5ce7efbbc5425b3df9905f073a1dcde2bee09ca5b33628af11ea5b400d6b42b77e7b99bfcd8d3f6207ce476e646b55743c6796880c39dd169a5ca4408ff92be564af120a721a78cc12f4c566f729ecc58df99ec019a4b91557c5b10733cace2518ee517853dfb2cb2152a64bcd6f6a2fb37a21f40bfb8419656847eeeaae384f6ce65059d8fdf2d3f127a553b8d2a1243494f20677cc50b9e48bac585a48027e5a4d68935febd9d14bf12467202c6f89e251e7311ae1f844eb145d03ff318aa7657ce72e8864d35210343448599f06a890cdba35c92a2b0d21275d56b244aa36a1a3c97ceae13e3d57fc4f7effa0b933bdd9c1758ba7c39613b54f6f341efcd708a9b4c953f4ab33b43af4198fcda62a940b0f79a922bbe0a7d27ea3dd6ef19f80a178b3fda003887f7086ab6a532e45d1bae808afcfff85df738fdd8c3182d4d90ace04c3d0ec9a5081a02cd774f399fa96dd9b697c95d021404899470793bf94504821f689adcaa7fd16cfd9fb04a324dd9a7e9b5e482f84090e7cbd831b7708ace49c0497dc0ab2951b69cdf04d72882248fdb06a1e7bb8b6b101bcff71e6fa7e831d7aefe0f9c2ae8278279fa9f3d0445a7d057bbac332cff4078387b162e41a606a164e7fcf784303245a843649afd6d434ef814e16097687040dc8f1f1b83b77c05213e811fe2dafdc6eee0010cce5f2eb999a72359709031189226862946637ddce1564949d71cd3bd33bd30b113c116371cec9147c49d03c48bb39e1d42cf55371c088a4756185996954842fb9c440f0d091307a9b4d729dabed50541687f5e322f49eb2d52a68265ad1bfd0e809adee2225d738bd9680bbebb37d613a71ffd2d664116136915560b553d4ddfe85453c358b5029d0ad0b7e10</script>
-</div>
-<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" rel="tag"># 科学上网</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/06/07/2018-06-07-MFSS-SSR/" rel="next" title="免费的ss/ssr">
-                <i class="fa fa-chevron-left"></i> 免费的ss/ssr
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/03/09/2020-03-09-hexo/" rel="prev" title="Hexo">
-                Hexo <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-
-  
-
-
-
+                <div class="footer-tag clearfix">
+                    <div class="pull-left">
+                    <i class="fa fa-tags"></i>
+                        <a class="tag-link" href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" rel="tag">科学上网</a>
+                    </div>
+                    <div class="pull-date">
+                    <span>最后编辑：2020-03-18</span>
+                    </div>
+                </div>
+            </footer>
         </div>
         
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar.png"
-                alt="空白" />
-            
-              <p class="site-author-name" itemprop="name">空白</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/%7C%7Carchive">
-             
-                <a href="/archives">
-              
-                  <span class="site-state-item-count">23</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">14</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
+            <nav class="navigation post-navigation clearfix" role="navigation">
                 
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
+                <div class="nav-previous clearfix">
+                    <a title=" 免费的ss/ssr" href="/2018/06/07/2018-06-07-MFSS-SSR/">&lt; 上一篇</a>
+                </div>
                 
-            </div>
-          
-
-          
-          
-
-          
-          
-            <div class="links-of-blogroll motion-element links-of-blogroll-block">
-              <div class="links-of-blogroll-title">
-                <i class="fa  fa-fw fa-link"></i>
-                Links
-              </div>
-              <ul class="links-of-blogroll-list">
                 
-                  <li class="links-of-blogroll-item">
-                    <a href="https://pan.suker.top/" title="网盘" target="_blank">网盘</a>
-                  </li>
+                <div class="nav-next clearfix">
+                    <a title=" Hexo" href="/2020/03/09/2020-03-09-hexo/">下一篇 &gt;</a>
+                </div>
                 
-              </ul>
-            </div>
-          
-
-          
-
+            </nav>
+        
+        
+    </article>
+</section>
         </div>
-      </section>
-
-      
-
-      
-
+                
+            <section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+                
+                    <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/avatar.webp" />
+        </div>
     </div>
+    <div class="textwidget">
+        
+            <p class="text-center">希望你的坚持都是因为热爱，而不是不甘。
+            测试
+            </p>
+        
+    </div>
+</aside>
+                
+                    <!-- Moved to about.ejs -->
+                
+                    
+  <aside id="krw-categories" class="widget widget-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8A%9E%E5%85%AC/">办公</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8A%9E%E5%85%AC/%E7%94%B5%E8%84%91/">电脑</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%94%B5%E5%AD%90%E8%AE%BE%E5%A4%87/">电子设备</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%94%B5%E8%84%91/">电脑</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BD%91%E7%AB%99/">网站</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%B7%AF%E7%94%B1%E5%99%A8/">路由器</a><span class="category-list-count">1</span></li></ul>
   </aside>
 
 
-        
+                
+                    
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 0.6em;">C语言</a> <a href="/tags/Github/" style="font-size: 0.6em;">Github</a> <a href="/tags/hexo/" style="font-size: 0.6em;">hexo</a> <a href="/tags/office/" style="font-size: 0.6em;">office</a> <a href="/tags/win10/" style="font-size: 0.6em;">win10</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 0.6em;">博客</a> <a href="/tags/%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E9%9F%B3%E4%B9%90/" style="font-size: 0.6em;">我喜欢的音乐</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 0.6em;">服务器</a> <a href="/tags/%E6%9C%BA%E9%A1%B6%E7%9B%92/" style="font-size: 0.6em;">机顶盒</a> <a href="/tags/%E7%94%B5%E8%84%91/" style="font-size: 0.8em;">电脑</a> <a href="/tags/%E7%94%B5%E8%84%91%E7%B3%BB%E7%BB%9F/" style="font-size: 0.6em;">电脑系统</a> <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" style="font-size: 0.73em;">科学上网</a> <a href="/tags/%E7%BD%91%E7%AB%99/" style="font-size: 0.67em;">网站</a> <a href="/tags/%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98/" style="font-size: 0.6em;">超级管理员</a>
       </div>
-    </main>
+  </aside>
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">空白</span>
-
-  
-</div>
-
-
-
-
-
-
-
-
-<div>本博客已艰难的运行 <span id="blog_running_days"></span> days , <span id="blog_running_hours"></span> h , <span id="blog_running_mins"></span> m , <span id="blog_running_secs"></span> s</div>
-<script no-pjax>
-var blog_running_days=document.getElementById("blog_running_days");
-var blog_running_hours=document.getElementById("blog_running_hours");
-var blog_running_mins=document.getElementById("blog_running_mins");
-var blog_running_secs=document.getElementById("blog_running_secs");
-function refresh_blog_running_time(){
- var time = new Date() - new Date(2021, 0, 4, 8, 0, 0);
- var d=parseInt(time/24/60/60/1000);
- var h=parseInt(time%(24*60*60*1000)/60/60/1000);
- var m=parseInt(time%(60*60*1000)/60/1000);
- var s=parseInt(time%(60*1000)/1000);
- blog_running_days.innerHTML=d;
- blog_running_hours.innerHTML=h;
- blog_running_mins.innerHTML=m;
- blog_running_secs.innerHTML=s;
-}
-refresh_blog_running_time();
-if (typeof(bottomTimeIntervalHasSet) == "undefined"){
- var bottomTimeIntervalHasSet = true;
- setInterval(function(){refresh_blog_running_time();},500);
-}
-</script>
+                
+                    
+  <aside id="krw-posts" class="widget widget-kratos-poststab">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
         
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-uv">
-      本站访问数<i class="fa fa-user"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      人次
-    </span>
-  
-
-  
-    <span class="site-pv">
-      本站总访问量<i class="fa fa-eye"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      次
-    </span>
-  
-</div>
-
-
-
-
-
-
-
-
         
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
+          
+          
+            <a class="list-group-item" href="/2021/03/11/20200311-bug/"><i class="fa  fa-book"></i> 关于博客的Bug</a>
+            
+          
         
-      </div>
-    
-
-    
-
+          
+          
+            <a class="list-group-item" href="/2021/01/18/20210107-%E7%94%B5%E8%A7%86%E6%9C%BA%E9%A1%B6%E7%9B%92/"><i class="fa  fa-book"></i> 电信电视盒子破解使用教程</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2020/08/24/2020-08-24-MC/"><i class="fa  fa-book"></i> 我的世界开服务器教程</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2020/05/24/2020-05-24-Aria2/"><i class="fa  fa-book"></i> Aria2</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2020/05/15/2020-05-15-v2/"><i class="fa  fa-book"></i> 节点</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
   </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/three/three.min.js"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    var isXml = true;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length === 0) {
-      search_path = "search.xml";
-    } else if (/json$/i.test(search_path)) {
-      isXml = false;
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    var onPopupClose = function (e) {
-      $('.popup').hide();
-      $('#local-search-input').val('');
-      $('.search-result-list').remove();
-      $('#no-result').remove();
-      $(".local-search-pop-overlay").remove();
-      $('body').css('overflow', '');
-    }
-
-    function proceedsearch() {
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
-        .css('overflow', 'hidden');
-      $('.search-popup-overlay').click(onPopupClose);
-      $('.popup').toggle();
-      var $localSearchInput = $('#local-search-input');
-      $localSearchInput.attr("autocapitalize", "none");
-      $localSearchInput.attr("autocorrect", "off");
-      $localSearchInput.focus();
-    }
-
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-      'use strict';
-
-      // start loading animation
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
-          '<div id="search-loading-icon">' +
-          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
-          '</div>' +
-          '</div>')
-        .css('overflow', 'hidden');
-      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
-
-      $.ajax({
-        url: path,
-        dataType: isXml ? "xml" : "json",
-        async: true,
-        success: function(res) {
-          // get the contents from search data
-          isfetched = true;
-          $('.popup').detach().appendTo('.header-inner');
-          var datas = isXml ? $("entry", res).map(function() {
-            return {
-              title: $("title", this).text(),
-              content: $("content",this).text(),
-              url: $("url" , this).text()
-            };
-          }).get() : res;
-          var input = document.getElementById(search_id);
-          var resultContent = document.getElementById(content_id);
-          var inputEventFunction = function() {
-            var searchText = input.value.trim().toLowerCase();
-            var keywords = searchText.split(/[\s\-]+/);
-            if (keywords.length > 1) {
-              keywords.push(searchText);
-            }
-            var resultItems = [];
-            if (searchText.length > 0) {
-              // perform local searching
-              datas.forEach(function(data) {
-                var isMatch = false;
-                var hitCount = 0;
-                var searchTextCount = 0;
-                var title = data.title.trim();
-                var titleInLowerCase = title.toLowerCase();
-                var content = data.content.trim().replace(/<[^>]+>/g,"");
-                var contentInLowerCase = content.toLowerCase();
-                var articleUrl = decodeURIComponent(data.url);
-                var indexOfTitle = [];
-                var indexOfContent = [];
-                // only match articles with not empty titles
-                if(title != '') {
-                  keywords.forEach(function(keyword) {
-                    function getIndexByWord(word, text, caseSensitive) {
-                      var wordLen = word.length;
-                      if (wordLen === 0) {
-                        return [];
-                      }
-                      var startPosition = 0, position = [], index = [];
-                      if (!caseSensitive) {
-                        text = text.toLowerCase();
-                        word = word.toLowerCase();
-                      }
-                      while ((position = text.indexOf(word, startPosition)) > -1) {
-                        index.push({position: position, word: word});
-                        startPosition = position + wordLen;
-                      }
-                      return index;
-                    }
-
-                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
-                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
-                  });
-                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
-                    isMatch = true;
-                    hitCount = indexOfTitle.length + indexOfContent.length;
-                  }
-                }
-
-                // show search results
-
-                if (isMatch) {
-                  // sort index by position of keyword
-
-                  [indexOfTitle, indexOfContent].forEach(function (index) {
-                    index.sort(function (itemLeft, itemRight) {
-                      if (itemRight.position !== itemLeft.position) {
-                        return itemRight.position - itemLeft.position;
-                      } else {
-                        return itemLeft.word.length - itemRight.word.length;
-                      }
-                    });
-                  });
-
-                  // merge hits into slices
-
-                  function mergeIntoSlice(text, start, end, index) {
-                    var item = index[index.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    var hits = [];
-                    var searchTextCountInSlice = 0;
-                    while (position + word.length <= end && index.length != 0) {
-                      if (word === searchText) {
-                        searchTextCountInSlice++;
-                      }
-                      hits.push({position: position, length: word.length});
-                      var wordEnd = position + word.length;
-
-                      // move to next position of hit
-
-                      index.pop();
-                      while (index.length != 0) {
-                        item = index[index.length - 1];
-                        position = item.position;
-                        word = item.word;
-                        if (wordEnd > position) {
-                          index.pop();
-                        } else {
-                          break;
-                        }
-                      }
-                    }
-                    searchTextCount += searchTextCountInSlice;
-                    return {
-                      hits: hits,
-                      start: start,
-                      end: end,
-                      searchTextCount: searchTextCountInSlice
-                    };
-                  }
-
-                  var slicesOfTitle = [];
-                  if (indexOfTitle.length != 0) {
-                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
-                  }
-
-                  var slicesOfContent = [];
-                  while (indexOfContent.length != 0) {
-                    var item = indexOfContent[indexOfContent.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    // cut out 100 characters
-                    var start = position - 20;
-                    var end = position + 80;
-                    if(start < 0){
-                      start = 0;
-                    }
-                    if (end < position + word.length) {
-                      end = position + word.length;
-                    }
-                    if(end > content.length){
-                      end = content.length;
-                    }
-                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
-                  }
-
-                  // sort slices in content by search text's count and hits' count
-
-                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
-                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
-                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
-                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
-                      return sliceRight.hits.length - sliceLeft.hits.length;
-                    } else {
-                      return sliceLeft.start - sliceRight.start;
-                    }
-                  });
-
-                  // select top N slices in content
-
-                  var upperBound = parseInt('1');
-                  if (upperBound >= 0) {
-                    slicesOfContent = slicesOfContent.slice(0, upperBound);
-                  }
-
-                  // highlight title and content
-
-                  function highlightKeyword(text, slice) {
-                    var result = '';
-                    var prevEnd = slice.start;
-                    slice.hits.forEach(function (hit) {
-                      result += text.substring(prevEnd, hit.position);
-                      var end = hit.position + hit.length;
-                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
-                      prevEnd = end;
-                    });
-                    result += text.substring(prevEnd, slice.end);
-                    return result;
-                  }
-
-                  var resultItem = '';
-
-                  if (slicesOfTitle.length != 0) {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
-                  } else {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
-                  }
-
-                  slicesOfContent.forEach(function (slice) {
-                    resultItem += "<a href='" + articleUrl + "'>" +
-                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
-                      "...</p>" + "</a>";
-                  });
-
-                  resultItem += "</li>";
-                  resultItems.push({
-                    item: resultItem,
-                    searchTextCount: searchTextCount,
-                    hitCount: hitCount,
-                    id: resultItems.length
-                  });
-                }
-              })
-            };
-            if (keywords.length === 1 && keywords[0] === "") {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
-            } else if (resultItems.length === 0) {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
-            } else {
-              resultItems.sort(function (resultLeft, resultRight) {
-                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
-                  return resultRight.searchTextCount - resultLeft.searchTextCount;
-                } else if (resultLeft.hitCount !== resultRight.hitCount) {
-                  return resultRight.hitCount - resultLeft.hitCount;
-                } else {
-                  return resultRight.id - resultLeft.id;
-                }
-              });
-              var searchResultList = '<ul class=\"search-result-list\">';
-              resultItems.forEach(function (result) {
-                searchResultList += result.item;
-              })
-              searchResultList += "</ul>";
-              resultContent.innerHTML = searchResultList;
-            }
-          }
-
-          if ('auto' === 'auto') {
-            input.addEventListener('input', inputEventFunction);
-          } else {
-            $('.search-icon').click(inputEventFunction);
-            input.addEventListener('keypress', function (event) {
-              if (event.keyCode === 13) {
-                inputEventFunction();
-              }
-            });
-          }
-
-          // remove loading animation
-          $(".local-search-pop-overlay").remove();
-          $('body').css('overflow', '');
-
-          proceedsearch();
-        }
-      });
-    }
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched === false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-    $(document).on('keyup', function (event) {
-      var shouldDismissSearchPopup = event.which === 27 &&
-        $('.search-popup').is(':visible');
-      if (shouldDismissSearchPopup) {
-        onPopupClose();
-      }
-    });
-  </script>
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
-
-</body>
+  </aside>
+
+                
+            </section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer">
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        
+                        <li><a href="mailto:12@qq.com"><i class="fa fa-envelope"></i></a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a target="_blank" rel="nofollow" href="https://github.com/123"><i class="fa fa-github"></i></a></li>
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2021 空白 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>状态 <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Made with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by <a href="https://xxxx.com" target="_blank" rel="nofollow">Candinya</a>.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.suker.top/" target="_blank" rel="nofollow">主页</a></li>
+                            <li>状态 <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+<script>const notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));</script>
+
+    <div>
+        <canvas id="snow"></canvas>
+        <script async type="text/javascript" src="/js/snow.min.js"></script>
+    </div>
+
+<script async src="/js/candy.min.js"></script>
+
+
+    <script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+    <script defer src="/js/kr-dark.min.js"></script>
+
+
+    </body>
 </html>
