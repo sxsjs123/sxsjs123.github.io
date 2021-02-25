@@ -278,6 +278,32 @@
   </entry>
   
   <entry>
+    <title>OLAINDEX定制版网页搭建</title>
+    <link href="http://sxsjs123.xyz/2020/03/17/2021-08-18-sjhl/"/>
+    <id>http://sxsjs123.xyz/2020/03/17/2021-08-18-sjhl/</id>
+    <published>2020-03-17T02:07:06.000Z</published>
+    <updated>2021-02-18T12:12:20.248Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="开始吧"><a href="#开始吧" class="headerlink" title="开始吧"></a>开始吧</h1><p>关闭PHP的几个禁用函数：exec 、putenv 、 shell_exec 、 proc_open 、proc_get_status</p><p>1、新建站点，如 xxx.cn</p><p>2、获取OLAINDEX，并初始化</p><p>SSH下，进入网站目录 ，如 /www/wwwroot/xxxx.com</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;gitee.com&#x2F;LXY1226&#x2F;OLAINDEX.git tmp </span><br><span class="line">mv tmp&#x2F;.git . </span><br><span class="line">rm -rf tmp </span><br><span class="line">git reset --hard </span><br><span class="line">cp database&#x2F;database.sample.sqlite database&#x2F;database.sqlite</span><br><span class="line">composer install -vvv</span><br><span class="line">chmod -R 755 storage&#x2F;</span><br><span class="line">chown -R www:www *</span><br><span class="line">php artisan od:install</span><br></pre></td></tr></table></figure><p>3、网站目录设置为 /public ，伪静态选 Laravel5，启用SSL，删除配置文件中的</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$</span><br><span class="line">&#123;</span><br><span class="line">    expires      30d;</span><br><span class="line">    error_log off;</span><br><span class="line">    access_log off;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">location ~ .*\.(js|css)?$</span><br><span class="line">&#123;</span><br><span class="line">    expires      12h;</span><br><span class="line">    error_log off;</span><br><span class="line">    access_log off; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;开始吧&quot;&gt;&lt;a href=&quot;#开始吧&quot; class=&quot;headerlink&quot; title=&quot;开始吧&quot;&gt;&lt;/a&gt;开始吧&lt;/h1&gt;&lt;p&gt;关闭PHP的几个禁用函数：exec 、putenv 、 shell_exec 、 proc_open 、proc_get_statu</summary>
+      
+    
+    
+    
+    <category term="办公" scheme="http://sxsjs123.xyz/categories/%E5%8A%9E%E5%85%AC/"/>
+    
+    <category term="电脑" scheme="http://sxsjs123.xyz/categories/%E5%8A%9E%E5%85%AC/%E7%94%B5%E8%84%91/"/>
+    
+    
+    <category term="office" scheme="http://sxsjs123.xyz/tags/office/"/>
+    
+  </entry>
+  
+  <entry>
     <title>路由器超级管理员密码</title>
     <link href="http://sxsjs123.xyz/2020/03/14/20200314-luyouqi/"/>
     <id>http://sxsjs123.xyz/2020/03/14/20200314-luyouqi/</id>
@@ -464,31 +490,6 @@ CNAME –不带任何后缀，这就是全称</summary>
       
     <summary type="html">&lt;p&gt;   简单点直接&lt;/p&gt;
 &lt;p&gt;   链接：&lt;a href=&quot;https://pan.baidu.com/s/1n5BDXRANtJDOIo4xpcSK2w&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1n</summary>
-      
-    
-    
-    
-    <category term="电脑" scheme="http://sxsjs123.xyz/categories/%E7%94%B5%E8%84%91/"/>
-    
-    
-    <category term="电脑" scheme="http://sxsjs123.xyz/tags/%E7%94%B5%E8%84%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VPS链接工具</title>
-    <link href="http://sxsjs123.xyz/2018/06/07/2018-06-07-VPSGJ/"/>
-    <id>http://sxsjs123.xyz/2018/06/07/2018-06-07-VPSGJ/</id>
-    <published>2018-06-07T10:07:52.000Z</published>
-    <updated>2020-03-09T06:36:22.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>简单点直接<br><img src="https://i.imgur.com/NhxBamw.png" alt=""><br><img src="https://i.imgur.com/uArdJ02.png" alt=""></p><p>下载链接：<a href="https://sxsjs123.github.io/xizai/BitviseSSH工具.zip" target="_blank" rel="noopener">https://sxsjs123.github.io/xizai/BitviseSSH工具.zip</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;简单点直接&lt;br&gt;&lt;img src=&quot;https://i.imgur.com/NhxBamw.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://i.imgur.com/uArdJ02.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;下载链接：&lt;a href=&quot;ht</summary>
       
     
     
