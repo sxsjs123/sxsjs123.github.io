@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）（转载）https:&#x2F;&#x2F;blog.csdn.net&#x2F;ReCclay&#x2F;article&#x2F;details&#x2F;113740950 文章目录 一、基础知识储备 二、Nvidia显卡驱动 + CUDA + CuDNN 安装指南  2.1、如何查看自己电脑是否可以使用GPU加速？">
+  <meta name="description" content="【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="cuda">
 <meta property="og:url" content="http://example.com/2021/02/09/20210209-cuda/index.html">
 <meta property="og:site_name" content="空白世界">
-<meta property="og:description" content="【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）（转载）https:&#x2F;&#x2F;blog.csdn.net&#x2F;ReCclay&#x2F;article&#x2F;details&#x2F;113740950 文章目录 一、基础知识储备 二、Nvidia显卡驱动 + CUDA + CuDNN 安装指南  2.1、如何查看自己电脑是否可以使用GPU加速？">
+<meta property="og:description" content="【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20210207145455554.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/2021020715042634.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
@@ -83,7 +83,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20210208190345239.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20210208193741879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2021-02-09T11:50:31.000Z">
-<meta property="article:modified_time" content="2021-02-09T09:05:05.319Z">
+<meta property="article:modified_time" content="2022-10-18T09:18:44.096Z">
 <meta property="article:author" content="suker">
 <meta property="article:tag" content="电脑">
 <meta name="twitter:card" content="summary">
@@ -278,10 +278,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-02-09 19:50:31 / 修改时间：17:05:05" itemprop="dateCreated datePublished" datetime="2021-02-09T19:50:31+08:00">2021-02-09</time>
+              <time title="创建时间：2021-02-09 19:50:31" itemprop="dateCreated datePublished" datetime="2021-02-09T19:50:31+08:00">2021-02-09</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-10-18 17:18:44" itemprop="dateModified" datetime="2022-10-18T17:18:44+08:00">2022-10-18</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -303,7 +309,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="【深度学习环境搭建】Pytorch-GPU1-7-1-和-TensorFlow-GPU1-14-0-安装指南（基于windows10）"><a href="#【深度学习环境搭建】Pytorch-GPU1-7-1-和-TensorFlow-GPU1-14-0-安装指南（基于windows10）" class="headerlink" title="【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）"></a>【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）</h1><p>（转载）<a target="_blank" rel="noopener" href="https://blog.csdn.net/ReCclay/article/details/113740950">https://blog.csdn.net/ReCclay/article/details/113740950</a></p>
+        <h1 id="【深度学习环境搭建】Pytorch-GPU1-7-1-和-TensorFlow-GPU1-14-0-安装指南（基于windows10）"><a href="#【深度学习环境搭建】Pytorch-GPU1-7-1-和-TensorFlow-GPU1-14-0-安装指南（基于windows10）" class="headerlink" title="【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）"></a>【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）</h1><span id="more"></span>
+
+<p>（转载）<a target="_blank" rel="noopener" href="https://blog.csdn.net/ReCclay/article/details/113740950">https://blog.csdn.net/ReCclay/article/details/113740950</a></p>
 <h3 id="文章目录"><a href="#文章目录" class="headerlink" title="文章目录"></a>文章目录</h3><ul>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/ReCclay/article/details/113740950#_4">一、基础知识储备</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/ReCclay/article/details/113740950#Nvidia__CUDA__CuDNN__14">二、Nvidia显卡驱动 + CUDA + CuDNN 安装指南</a></li>
@@ -573,12 +581,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2018/06/07/2018-06-07-MFSS-SSR/" rel="prev" title="免费的ss/ssr">
-      <i class="fa fa-chevron-left"></i> 免费的ss/ssr
+    <a href="/2018/06/07/2018-06-07-VPSGJ/" rel="prev" title="VPS链接工具">
+      <i class="fa fa-chevron-left"></i> VPS链接工具
     </a></div>
       <div class="post-nav-item">
-    <a href="/2022/10/18/hello-world/" rel="next" title="Hello World">
-      Hello World <i class="fa fa-chevron-right"></i>
+    <a href="/2022/10/18/2022-10-18-frp/" rel="next" title="frp远程控制电脑">
+      frp远程控制电脑 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -654,7 +662,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
