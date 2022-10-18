@@ -17,6 +17,24 @@
       </tags>
   </entry>
   <entry>
+    <title>VPS链接工具</title>
+    <url>/2018/06/07/2018-06-07-VPSGJ/</url>
+    <content><![CDATA[<p>简单点直接</p>
+<span id="more"></span>
+<p><img src="https://i.imgur.com/NhxBamw.png"><br><img src="https://i.imgur.com/uArdJ02.png"></p>
+<!--more-->
+
+
+<p>下载链接：<a href="https://sxsjs123.github.io/xizai/BitviseSSH%E5%B7%A5%E5%85%B7.zip">https://sxsjs123.github.io/xizai/BitviseSSH工具.zip</a></p>
+]]></content>
+      <categories>
+        <category>电脑</category>
+      </categories>
+      <tags>
+        <tag>电脑</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Microsoft Office 2016 简体中文版</title>
     <url>/2018/05/26/2018-05-26-office2016/</url>
     <content><![CDATA[<p>Microsoft office 2016官方版是针对Windows 10环境从零全新开发的通用应用（Universal App）。</p>
@@ -36,8 +54,7 @@
   <entry>
     <title>frp远程控制电脑</title>
     <url>/2022/10/18/2022-10-18-frp/</url>
-    <content><![CDATA[<p>简单点直接<span id="more"></span></p>
-]]></content>
+    <content><![CDATA[<h6 id="frp-是一个专注于内网穿透的高性能的反向代理应用，支持-TCP、UDP、HTTP、HTTPS-等多种协议。可以将内网服务以安全、便捷的方式通过具有公网-IP-节点的中转暴露到公网。"><a href="#frp-是一个专注于内网穿透的高性能的反向代理应用，支持-TCP、UDP、HTTP、HTTPS-等多种协议。可以将内网服务以安全、便捷的方式通过具有公网-IP-节点的中转暴露到公网。" class="headerlink" title="frp 是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。"></a>frp 是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。<span id="more"></span></h6>]]></content>
       <categories>
         <category>电脑</category>
       </categories>
@@ -46,7 +63,7 @@
       </tags>
   </entry>
   <entry>
-    <title>cuda</title>
+    <title>CUDA</title>
     <url>/2021/02/09/20210209-cuda/</url>
     <content><![CDATA[<h1 id="【深度学习环境搭建】Pytorch-GPU1-7-1-和-TensorFlow-GPU1-14-0-安装指南（基于windows10）"><a href="#【深度学习环境搭建】Pytorch-GPU1-7-1-和-TensorFlow-GPU1-14-0-安装指南（基于windows10）" class="headerlink" title="【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）"></a>【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）</h1><span id="more"></span>
 
@@ -302,24 +319,6 @@
 <li><a href="https://zhuanlan.zhihu.com/p/94220564">win10安装CUDA和cuDNN的正确姿势</a></li>
 <li><a href="https://blog.csdn.net/qq_27825451/article/details/89082978">tensorflow各个版本的CUDA以及Cudnn版本对应关系</a></li>
 </ul>
-]]></content>
-      <categories>
-        <category>电脑</category>
-      </categories>
-      <tags>
-        <tag>电脑</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VPS链接工具</title>
-    <url>/2018/06/07/2018-06-07-VPSGJ/</url>
-    <content><![CDATA[<p>简单点直接</p>
-<span id="more"></span>
-<p><img src="https://i.imgur.com/NhxBamw.png"><br><img src="https://i.imgur.com/uArdJ02.png"></p>
-<!--more-->
-
-
-<p>下载链接：<a href="https://sxsjs123.github.io/xizai/BitviseSSH%E5%B7%A5%E5%85%B7.zip">https://sxsjs123.github.io/xizai/BitviseSSH工具.zip</a></p>
 ]]></content>
       <categories>
         <category>电脑</category>
