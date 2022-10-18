@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/10/18/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><span id="more"></span>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>VPS链接工具</title>
+    <url>/2018/06/07/2018-06-07-VPSGJ/</url>
+    <content><![CDATA[<p>简单点直接<br><img src="https://i.imgur.com/NhxBamw.png"><br><img src="https://i.imgur.com/uArdJ02.png"></p>
+<span id="more"></span>
+
+
+<p>下载链接：<a href="https://sxsjs123.github.io/xizai/BitviseSSH%E5%B7%A5%E5%85%B7.zip">https://sxsjs123.github.io/xizai/BitviseSSH工具.zip</a></p>
+]]></content>
+      <categories>
+        <category>电脑</category>
+      </categories>
+      <tags>
+        <tag>电脑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>免费的ss/ssr</title>
+    <url>/2018/06/07/2018-06-07-MFSS-SSR/</url>
+    <content><![CDATA[<p><a href="https://my.ishadowx.net/">https://my.ishadowx.net/</a></p>
+<p>免费SS信息<br>所有服务器将被重置并每6小时更改一次密码。</p>
+<p><a href="https://get.ss8.fun/#free">https://get.ss8.fun/#free</a></p>
+<p>SS配置<br>扫描QRCODE以自动配置服务器。每4小时重置一次。</p>
+]]></content>
+      <categories>
+        <category>电脑</category>
+      </categories>
+      <tags>
+        <tag>电脑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Microsoft Office 2016 简体中文版</title>
+    <url>/2018/05/26/2018-05-26-office2016/</url>
+    <content><![CDATA[<p>Microsoft office 2016官方版是针对Windows 10环境从零全新开发的通用应用（Universal App）。office2016正式版中的Word将会增加“Insights for Office”、“Read Mode”等新功能，powerpoint增加了“Presenter View”功能，相信全新的office 2016让我们的办公生活更加先进！现提供Office2016官方下载。</p>
+<p>下载链接：<a href="https://pan.baidu.com/s/1YVwWIP_I1uJ6xhYAnxxEmQ">https://pan.baidu.com/s/1YVwWIP_I1uJ6xhYAnxxEmQ</a> 密码：iptq</p>
+<p>1、将下载好的Office 2016解压，解压后，双击运行setup.exe。<br><img src="https://i.imgur.com/PkLDdBT.jpg"><br>2、然后就是等待安装完成，如果安装顺利，最终会出现安装成功。如果中途报错，那么就是安装失败，出现错误代码，那么就要安照步骤重新安装，或者是电脑之前的office没有卸载干净，需先卸载干净再安装office2016。</p>
+<p>　微软官方序列号（产品激活密钥）：NKGG6-WBPCC-HXWMY-6DQGJ-CPQVG。</p>
+]]></content>
+      <categories>
+        <category>电脑</category>
+      </categories>
+      <tags>
+        <tag>电脑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电脑问题</title>
+    <url>/2018/05/25/2018-05-25-DNWT/</url>
+    <content><![CDATA[<p>USB接口也出现“该设备无法启动。 (代码 10)，系统资源不够，无法完成 API。”<br>出现USB这类的硬件无法使用  需要检查一下 设备管理器  里的这个<br><img src="https://i.imgur.com/0DPSbxR.png"><br>看是否有感叹号（有问题的硬件）<br>然后<br>解决方法如下：打开注册表编辑器：开始-&gt;运行-&gt;regedit，找到下面注册表项：HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\ {36FC9E60-C465-11CF-8056-444553540000} </p>
+<p>在右边的项目中找到“upperfilter“项或者”lowerfilter“项，然后删除，再进入设备管理器中把通行串行总路线控制器的感叹号项目删除，再点右键”扫描检测硬件改动“，系统则会重新安装驱动，这样问题就迎刃而解。这种问题主要是量产工具自身带的驱动导致的，并且一般量产工具也都提供驱动卸载的功能。所以在量产完成后，执行驱动卸载工具，把量产工具自带的驱动卸载掉，即不会发生此现象。</p>
+<p>需要全部卸载驱动 如下图<br><img src="https://i.imgur.com/K1iChAz.png"><br>扫描检测硬件改动 如下图<br><img src="https://i.imgur.com/TYllNCy.png"></p>
+]]></content>
+      <categories>
+        <category>电脑</category>
+      </categories>
+      <tags>
+        <tag>电脑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>cuda</title>
+    <url>/2021/02/09/20210209-cuda/</url>
+    <content><![CDATA[<h1 id="【深度学习环境搭建】Pytorch-GPU1-7-1-和-TensorFlow-GPU1-14-0-安装指南（基于windows10）"><a href="#【深度学习环境搭建】Pytorch-GPU1-7-1-和-TensorFlow-GPU1-14-0-安装指南（基于windows10）" class="headerlink" title="【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）"></a>【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）</h1><p>（转载）<a href="https://blog.csdn.net/ReCclay/article/details/113740950">https://blog.csdn.net/ReCclay/article/details/113740950</a></p>
+<h3 id="文章目录"><a href="#文章目录" class="headerlink" title="文章目录"></a>文章目录</h3><ul>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#_4">一、基础知识储备</a></li>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#Nvidia__CUDA__CuDNN__14">二、Nvidia显卡驱动 + CUDA + CuDNN 安装指南</a></li>
+<li><ul>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#21GPU_16">2.1、如何查看自己电脑是否可以使用GPU加速？</a></li>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#22CUDA_39">2.2、CUDA安装</a></li>
+<li><ul>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#221CUDA__42">2.2.1、CUDA 安装前的絮叨</a></li>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#222CUDA_73">2.2.2、查看显卡是否支持CUDA</a></li>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#223_Nvidia__77">2.2.3、安装 Nvidia 显卡驱动</a></li>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#223_Visual_Studio_109">2.2.3、安装 Visual Studio</a></li>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#224_CUDA_146">2.2.4、安装 CUDA</a></li>
+</ul>
+</li>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#23CuDNN_255">2.3、安装CuDNN</a></li>
+<li><ul>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#231NVIDIACUDAcuDNN_259">2.3.1、再捋一下：NVIDIA的显卡驱动器、CUDA和cuDNN的关系</a></li>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#232CuDNN_280">2.3.2、CuDNN的下载与安装</a></li>
+</ul>
+</li>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#24_PytorchGPU_171_317">2.4、安装 Pytorch-GPU 1.7.1</a></li>
+<li><ul>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#241_conda__335">2.4.1、使用 conda 安装（三种方式选一种即可）</a></li>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#242_pip__375">2.4.2、使用 pip 安装（三种方式选一种即可）</a></li>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#243___392">2.4.3、使用 轮子 安装（三种方式选一种即可）</a></li>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#244_PytorchGPU__400">2.4.4、验证 Pytorch-GPU 是否安装成功</a></li>
+</ul>
+</li>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#25TensorFlowGPU_1140_414">2.5、安装TensorFlow-GPU 1.14.0</a></li>
+<li><ul>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#251conda_417">2.5.1、使用conda安装</a></li>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#252TensorFlowGPU_441">2.5.2、验证TensorFlow-GPU是否安装成功</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://blog.csdn.net/ReCclay/article/details/113740950#_457">参考</a></li>
+</ul>
+<blockquote>
+<p>搭建时间：2021年2月7日<br>环境套餐：win10 + vs2017 Community + Pytorch-GPU1.7.1（CUDA11.1 + CuDNN8.0.4） + TensorFlow-GPU1.14.0（CUDA10.0.130 + CuDNN7.6.5）</p>
+</blockquote>
+<h1 id="一、基础知识储备"><a href="#一、基础知识储备" class="headerlink" title="一、基础知识储备"></a>一、基础知识储备</h1><ul>
+<li>显卡：（GPU），主流是NVIDIA的GPU，因为深度学习本身需要大量计算。GPU的并行计算能力，在过去几年里恰当地满足了深度学习的需求。AMD的GPU基本没有什么支持，可以不用考虑。</li>
+<li>驱动：没有显卡驱动，就不能识别GPU硬件，不能调用其计算资源。</li>
+<li>CUDA：是显卡厂商NVIDIA推出的只能用于自家GPU的并行计算<strong>框架</strong>。只有安装这个框架才能够进行复杂的并行计算。主流的深度学习框架也都是基于CUDA进行GPU并行加速的，几乎无一例外。【CUDA的本质是一个工具包（ToolKit）】</li>
+<li>CuDNN，是针对<strong>深度卷积神经网络</strong>的加速库。</li>
+</ul>
+<blockquote>
+<p><strong>关于CUDA与CuDNN关系形象阐述</strong>：CUDA看作是一个工作台，上面配有很多工具，如锤子、螺丝刀等。cuDNN是基于CUDA的深度学习GPU加速库，有了它才能在GPU上完成深度学习的计算。它就相当于工作的工具，比如它就是个扳手。但是CUDA这个工作台买来的时候，并没有送扳手。想要在CUDA上运行深度神经网络，就要安装cuDNN，就像你想要拧个螺帽就要把扳手买回来。这样才能使GPU进行深度神经网络的工作，工作速度相较CPU快很多。</p>
+</blockquote>
+<h1 id="二、Nvidia显卡驱动-CUDA-CuDNN-安装指南"><a href="#二、Nvidia显卡驱动-CUDA-CuDNN-安装指南" class="headerlink" title="二、Nvidia显卡驱动 + CUDA + CuDNN 安装指南"></a>二、Nvidia显卡驱动 + CUDA + CuDNN 安装指南</h1><h2 id="2-1、如何查看自己电脑是否可以使用GPU加速？"><a href="#2-1、如何查看自己电脑是否可以使用GPU加速？" class="headerlink" title="2.1、如何查看自己电脑是否可以使用GPU加速？"></a>2.1、如何查看自己电脑是否可以使用GPU加速？</h2><blockquote>
+<p>如果这一步不满足，也就说明自己的电脑无法配置GPU版本的深度学习环境。</p>
+</blockquote>
+<p>想要使用GPU加速，则需要安装 CUDA，所以首先需要自己的电脑显卡是否支持 CUDA 的安装，也就是查看自己的电脑里面有没有NVIDA的独立显卡，这里再说明一下，AMD的显卡不支持安装 CUDA 来进行加速，具体查看步骤如下：</p>
+<p><strong>第一步</strong>：开始菜单输入框输入设备管理器，打开设备管理器，找到显示适配器后点击打开下单，查看电脑显卡型号：</p>
+<p><img src="https://img-blog.csdnimg.cn/20210207145455554.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>上面显卡有两个，第一个是核显，第二个才是独显</p>
+</blockquote>
+<p><strong>第二步</strong>：在NVIDA官网列表中，地址：<a href="https://developer.nvidia.com/cuda-gpus%EF%BC%8C%E6%9F%A5%E7%9C%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E6%98%BE%E5%8D%A1%E5%9E%8B%E5%8F%B7%E6%98%AF%E5%90%A6%E5%9C%A8NVIDA%E5%88%97%E8%A1%A8%E4%B8%AD%EF%BC%8C%E8%8B%A5%E5%AD%98%E5%9C%A8%E5%88%99%E5%8F%AF%E4%BB%A5%E4%B8%8B%E8%BD%BD">https://developer.nvidia.com/cuda-gpus，查看自己的显卡型号是否在NVIDA列表中，若存在则可以下载</a> CUDA 实现GPU加速，这里可以看到我的台式机显卡 GeForce GTX 960 ，算力为 5.2（笔记本 GTX 960M 算力是5.0），当然如果你的显卡运算能力在3.0以下，那没有适合你的 CUDA 版本。</p>
+<p><img src="https://img-blog.csdnimg.cn/2021020715042634.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210207150545406.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p><strong>小知识</strong>：GeForce GTX 960 用在台式机；GeForce GTX 960M 用在笔记本。</p>
+</blockquote>
+<h2 id="2-2、CUDA安装"><a href="#2-2、CUDA安装" class="headerlink" title="2.2、CUDA安装"></a>2.2、CUDA安装</h2><h3 id="2-2-1、CUDA-安装前的絮叨"><a href="#2-2-1、CUDA-安装前的絮叨" class="headerlink" title="2.2.1、CUDA 安装前的絮叨"></a>2.2.1、CUDA 安装前的絮叨</h3><p>安装CUDA之前，我们需要做一些准备工作，一起先来看下NVIDIA的官方的CUDA下载安装文档，CUDA11.2 安装文档地址：<a href="https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html%E3%80%82">https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html。</a></p>
+<p><img src="https://img-blog.csdnimg.cn/20210207155411214.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>其他CUDA版本的安装文档地址见：<a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a></p>
+</blockquote>
+<p>可以看到，如果我们想要下载安装CUDA需要有：NVIDA的显卡、Windows系统和Visual Studio。即：</p>
+<ul>
+<li>第一步：查看自己电脑是否有<strong>NVIDA显卡</strong>。</li>
+<li>第二步：查看自己是否有支持的版本的<strong>微软Windows系统</strong>，具体大家可看上图表1。</li>
+<li>第三步：查看自己是否有支持版本的<strong>Visual Studio</strong>,因为我们在安装CUDA时需要用到其中的组件，具体请看上图表2。</li>
+</ul>
+<p><strong>安装工作总结</strong>：</p>
+<ul>
+<li>查看自己有<strong>是否有支持NVIDA的独立显卡</strong></li>
+<li>查看自己<strong>是否有NVIDA显卡驱动程序</strong>，没有请下载安装</li>
+<li>官网<strong>下载安装 Microsoft Visual Studio</strong>(申请一个微软账号)</li>
+<li>官网<strong>下载安装 CUDA</strong></li>
+<li><strong>检验CUDA安装是否成功</strong></li>
+<li><strong>CUDA安装成功后的使用</strong></li>
+</ul>
+<p>这里以安装 CUDA11.2 和 VS2017 免费社区版为例。</p>
+<h3 id="2-2-2、查看显卡是否支持CUDA"><a href="#2-2-2、查看显卡是否支持CUDA" class="headerlink" title="2.2.2、查看显卡是否支持CUDA"></a>2.2.2、查看显卡是否支持CUDA</h3><p>查看自己是否有支持安装CUDA的NVIDIA显卡，见上文 2.1小节。</p>
+<h3 id="2-2-3、安装-Nvidia-显卡驱动"><a href="#2-2-3、安装-Nvidia-显卡驱动" class="headerlink" title="2.2.3、安装 Nvidia 显卡驱动"></a>2.2.3、安装 Nvidia 显卡驱动</h3><p>查看是否有NVIDA显卡驱动程序，如果有，就不用安装了（一般刚装完系统都会安装这些驱动），<strong>建议自动更新驱动程序一下</strong>；没有，请下载安装，地址：<a href="https://www.geforce.cn/drivers%EF%BC%8C%E6%9C%89%E4%B8%A4%E7%A7%8D%E5%AE%89%E8%A3%85%E6%96%B9%E5%BC%8F%E3%80%82%E8%87%AA%E5%8A%A8%E5%92%8C%E6%89%8B%E5%8A%A8%EF%BC%8C%E9%80%89%E6%8B%A9%E9%80%82%E5%90%88%E8%87%AA%E5%B7%B1%E7%94%B5%E8%84%91%E7%9A%84%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8%E4%B8%8B%E8%BD%BD%EF%BC%8C%E5%AE%89%E8%A3%85%E5%BE%88%E7%AE%80%E5%8D%95%EF%BC%8C%E7%9B%B4%E6%8E%A5%E4%B8%8B%E4%B8%80%E6%AD%A5%EF%BC%8C%E9%BB%98%E8%AE%A4%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E8%B7%AF%E5%BE%84%E5%B0%B1%E5%8F%AF%E4%BB%A5%E3%80%82">https://www.geforce.cn/drivers，有两种安装方式。自动和手动，选择适合自己电脑的显卡驱动下载，安装很简单，直接下一步，默认系统安装路径就可以。</a></p>
+<p>这里我选择了官网的自动安装，它给我下载了两个软件：</p>
+<p><img src="https://img-blog.csdnimg.cn/20210207154437709.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/2021020715440369.png" alt="在这里插入图片描述"></p>
+<p>打开Geforce Experience软件，点击右上角的检查更新文件，如果有更新提示，点击更新即可。<br><img src="https://img-blog.csdnimg.cn/20210207154521944.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20210207154312400.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20210207154503199.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>安装完后，在桌面右键选择 NVIDA 控制面板，查看GPU显卡所支持的CUDA版本。接着依次点击：NVIDIA控制面板 -&gt; 帮助 -&gt; 系统信息 -&gt; 组件，可以看到 <code>NVCUDA64.DLL</code> 后面的 CUDA 参数。该参数表示<strong>显卡支持的 CUDA 最高版本</strong>，我的显示11.2.135，所以我下载安装 <strong>CUDA11.2 及以下的版本</strong>即可。</p>
+<p><img src="https://img-blog.csdnimg.cn/20210207154947273.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>CUDA版本要求的系统驱动版本一定要确定好，一般系统驱动版本越高支持的CUDA版本越多！下图是 CUDA11.2 匹配的 windows 驱动版本截图。</p>
+<p><img src="https://img-blog.csdnimg.cn/20210207183851986.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>更多版本匹配信息可参考<a href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html">这里</a>。</p>
+</blockquote>
+<h3 id="2-2-3、安装-Visual-Studio"><a href="#2-2-3、安装-Visual-Studio" class="headerlink" title="2.2.3、安装 Visual Studio"></a>2.2.3、安装 Visual Studio</h3><p>因为<strong>CUDA在安装时，需要 VS 里面的工具包来编译</strong>。VS这里我安装的是社区免费版VS2017，无需秘钥key就可以使用，也可以使用其它版本，但是需要key。需要注意的是，在CUDA的安装过程中，会自动检测本机是否已经安装了配套的VS版本其中之一，如果VS版本和Cuda版本不匹配的话，安装无法进行。所以一定要根据自己的CUDA安装版本确定配套的Visual Studio版本，在 CUDA 11.2 的<a href="https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html">安装文档</a>中，我们可以看到，VS2017 和 CUDA11.2 是匹配的。</p>
+<p><img src="https://img-blog.csdnimg.cn/20210207155850748.png" alt="在这里插入图片描述"></p>
+<p><strong>第一步</strong>：到微软Visual Studio官方网站进行VS2017安装包下载，这里需要注册一个微软账号并订阅一个服务（不订阅页面会一直打不开…），如果没有的话按步骤进行注册、登录即可，VS2017 社区版下载地址：[<a href="https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%5D">https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017]</a>(<a href="https://my.visualstudio.com/Downloads?q=Visual">https://my.visualstudio.com/Downloads?q=Visual</a> Studio 2017)</p>
+<p><img src="https://img-blog.csdnimg.cn/20210207162108809.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/2021020716215119.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210207162202811.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>第二步</strong>：下载完安装包后双击，在工作负载处，勾选“C++的桌面开发”（其他的可不勾选，若需要的话，后面可再次安装）</p>
+<p><img src="https://img-blog.csdnimg.cn/20210207162417457.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>第三步</strong>：选择软件安装位置选择软件要安装到的地方，建议安装到专门放软件的盘，<strong>不要安装到系统盘C</strong>，然后点击开始进行安装<br><img src="https://img-blog.csdnimg.cn/20210207162635105.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>第四步</strong>：正式安装，这个过程需要等待一会儿时间<br><img src="https://img-blog.csdnimg.cn/20210207162657366.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>第五步</strong>：安装完后，按照网上说电脑会提示重启，但是我并没有重启提示，为了以防万一，我这里<strong>手动重启</strong>下。</p>
+<p>安装成功后的界面如下：</p>
+<p><img src="https://img-blog.csdnimg.cn/20210207164609409.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="2-2-4、安装-CUDA"><a href="#2-2-4、安装-CUDA" class="headerlink" title="2.2.4、安装 CUDA"></a>2.2.4、安装 CUDA</h3><blockquote>
+<p>CUDA Toolkit本地安装包时内含特定版本Nvidia显卡驱动的，所以<strong>只选择下载CUDA Toolkit就足够了</strong>，如果想安装其他版本的显卡驱动就下载相应版本即可。所以，NVIDIA显卡驱动和CUDA工具包本身是不具有捆绑关系的，也不是一一对应的关系，<strong>只不过是离线安装的CUDA工具包会默认携带与之匹配的最新的驱动程序</strong>。故，在<strong>使用多个CUDA的时候就不要选择离线安装的CUDA</strong>了，否则每次都会安装不同的显卡驱动，这不太好，我们<strong>直接安装一个最新版的显卡驱动，然后在线安装不同版本的CUDA</strong>即可。</p>
+</blockquote>
+<p><strong>第一步</strong>：到官网下载CUDA安装包，前面我们已经查看到了电脑GPU显卡所支持的CUDA版本为11.2,下载地址：<a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a></p>
+<p><img src="https://img-blog.csdnimg.cn/2021020716385882.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>明明显示11.2，不知道为啥下载出来的文件名是11.1…</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20210207164448350.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>第二步</strong>：下载完后，双击打开安装程序，为CUDA选择临时解压文件夹。<br><img src="https://img-blog.csdnimg.cn/20210207171507116.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210207171649491.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2021020717171248.png" alt="在这里插入图片描述"></p>
+<p><strong>第三步</strong>：同意并继续后，选择自定义安装<br><img src="https://img-blog.csdnimg.cn/20210207172029707.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210207172045786.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>第四步</strong>：安装组件，全部勾选，点击下一步<br><img src="https://img-blog.csdnimg.cn/20210207172106509.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>第五步</strong>：选择安装位置，这里建议默认安装，也可手动安装，但是要记得自己安装的位置，因为后面需要配置系统环境变量。（这里我就不改了）</p>
+<p><img src="https://img-blog.csdnimg.cn/20210207172312585.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>第六步</strong>：开始准备安装，等待安装完成，这需要等待一段时间</p>
+<p><img src="https://img-blog.csdnimg.cn/20210207172328371.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2021020717235315.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>安装完成界面如下，点击下一步，就安装完成了</p>
+<p><img src="https://img-blog.csdnimg.cn/20210207172557735.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20210207172640134.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>第七步</strong>：安装完成后，就需要我们配置 CUDA 的环境变量了，我们在计算机上点右键，打开属性-&gt;高级系统设置-&gt;环境变量，可以看到系统中多了几个环境变量，如<code>CUDA_PATH</code>和<code>CUDA_PATH_V11_1</code>。</p>
+<p><img src="https://img-blog.csdnimg.cn/20210207172824103.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>CUDA 安装好后，自动默认帮我们设置好了几个环境变量。为了<strong>方便日后配置VS使用CUDA</strong>，这里我们再手动添加以下5个环境变量。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">CUDA_SDK_PATH = C:\ProgramData\NVIDIA Corporation\CUDA Samples\v11.1</span><br><span class="line">CUDA_LIB_PATH = %CUDA_PATH%\lib\x64</span><br><span class="line">CUDA_BIN_PATH = %CUDA_PATH%\bin</span><br><span class="line">CUDA_SDK_BIN_PATH = %CUDA_SDK_PATH%\bin\win64</span><br><span class="line">CUDA_SDK_LIB_PATH = %CUDA_SDK_PATH%\common\lib\x64</span><br><span class="line">12345</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%CUDA_PATH%...`前面的%，作用其实就是加上CUDA_PATH的路径，也就是上图的`C:\Program Files\......</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>配置成功之后的图：<br><img src="https://img-blog.csdnimg.cn/20210207174016175.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>第八步</strong>：查看<strong>CUDA是否安装成功</strong></p>
+<p>配置完系统环境变量之后，我们就可以查看CUDA是否安装成功以及环境变量配置情况。</p>
+<p>①、查看CUDA安装版本：Win + R 打开cmd ，输入命令：<code>nvcc --version</code>。</p>
+<p><img src="https://img-blog.csdnimg.cn/20210207174433856.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>②、查看设置环境变量情况：输入命令：<code>set cuda</code></p>
+<p><img src="https://img-blog.csdnimg.cn/20210207174507549.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>③、在命令窗口运行测试文件，验证<code>deviceQuery</code>和<code>bandwidthTest</code>。首先定位到 cuda 安装目录下的： <code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\extras\demo_suite</code> 目录，接着分别输入<code>deviceQuery.exe</code>，<code>bandwidthTest.exe</code> 并运行。如果两个命令的<code>Result=PASS</code>则说明通过，反之，<code>Rsult=Fail</code> 则需要重新安装，如下图所示。</p>
+<p><img src="https://img-blog.csdnimg.cn/20210207175005905.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20210207174920236.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p><code>nvidia-smi</code>看的GPU相关信息更多，参数解读参考<a href="https://www.cnblogs.com/maxgongzuo/p/12582360.html">这里</a>，注意这里的CUDA Version指的不是你在使用的CUDA版本，想看在使用的CUDA版本输入<code>ncvv -V</code>命令！<br><img src="https://img-blog.csdnimg.cn/20210207175611524.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="这里是引用"></p>
+</blockquote>
+<p>如果以上都没问题，则说明CUDA安装成功。</p>
+<p>至于 CUDA 安装成功之后的使用，我们可以在Visual Studio中写C++代码使用，也可以在 Anaconda 和 Pycharm 中写 Python 代码使用。</p>
+<h2 id="2-3、安装CuDNN"><a href="#2-3、安装CuDNN" class="headerlink" title="2.3、安装CuDNN"></a>2.3、安装CuDNN</h2><blockquote>
+<p>CuDNN（常见的<strong>神经网络层加速库</strong>文件），能够很大程度把加载到显卡上的网络层数据进行优化计算，CUDNN可以在CUDA基础上加速2倍以上。</p>
+</blockquote>
+<h3 id="2-3-1、再捋一下：NVIDIA的显卡驱动器、CUDA和cuDNN的关系"><a href="#2-3-1、再捋一下：NVIDIA的显卡驱动器、CUDA和cuDNN的关系" class="headerlink" title="2.3.1、再捋一下：NVIDIA的显卡驱动器、CUDA和cuDNN的关系"></a>2.3.1、再捋一下：NVIDIA的显卡驱动器、CUDA和cuDNN的关系</h3><p><strong>NVIDIA的显卡驱动器与CUDA</strong></p>
+<p>NVIDIA的显卡驱动程序和CUDA完全是两个不同的概念，CUDA是NVIDIA推出的用于自家GPU的<strong>并行计算框架</strong>，也就是说<strong>CUDA只能在NVIDIA的GPU上运行</strong>，而且只有当要解决的计算问题是可以大量并行计算的时候才能发挥CUDA的作用。</p>
+<p>NVIDIA显卡驱动和CUDA工具包本身是不具有捆绑关系的，也不是一一对应的关系，<strong>CUDA本质上只是一个工具包而已，所以我可以在同一个设备上安装很多个不同版本的CUDA工具包</strong>，一般情况下，我只需要安装最新版本的显卡驱动，然后根据自己的选择选择不同CUDA工具包就可以了。</p>
+<p><strong>CUDA和cuDNN关系</strong></p>
+<p>CUDA看作是一个工作台，上面配有很多工具，如锤子、螺丝刀等。cuDNN是基于CUDA的深度学习GPU加速库，有了它才能在GPU上完成深度学习的计算。它就相当于工作的工具，比如它就是个扳手。但是CUDA这个工作台买来的时候，并没有送扳手。想要在CUDA上运行深度神经网络，就要安装cuDNN，就像你想要拧个螺帽就要把扳手买回来。这样才能使GPU进行深度神经网络的工作，工作速度相较CPU快很多。</p>
+<p><strong>注意</strong>：CuDNN是一个SDK，是一个专门用于神经网络的加速包，它跟我们的CUDA没有一一对应的关系，即<strong>每一个版本的CUDA可能有好几个版本的CuDNN与之对应</strong>，但一般有一个最新版本的CuDNN版本与CUDA对应更好。</p>
+<p>CuDNN支持的算法</p>
+<ul>
+<li>卷积操作、相关操作的前向和后向过程</li>
+<li>pooling的前向后向过程</li>
+<li>softmax的前向后向过程</li>
+<li>激活函数的前向后向过程,如（Relu、Sigmoid、Tanh ）等</li>
+</ul>
+<h3 id="2-3-2、CuDNN的下载与安装"><a href="#2-3-2、CuDNN的下载与安装" class="headerlink" title="2.3.2、CuDNN的下载与安装"></a>2.3.2、CuDNN的下载与安装</h3><p><strong>第一步</strong>：官网下载CuDNN的安装包，地址：<a href="https://developer.nvidia.com/cudnn%EF%BC%8C%E8%BF%99%E9%87%8C%E9%9C%80%E8%A6%81%E4%BD%A0%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AA%E8%B4%A6%E5%8F%B7%EF%BC%8C%E6%8C%89%E7%85%A7%E8%A6%81%E6%B1%82%E6%B3%A8%E5%86%8C%E5%AE%8C%E5%B0%B1%E5%8F%AF%E4%BB%A5%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%8C%85%E4%BA%86%EF%BC%8C%E8%BF%99%E9%87%8C%E6%88%91%E7%9A%84CUDA%E5%AE%89%E8%A3%85%E7%9A%84%E6%98%AF11.2%E7%89%88%E6%9C%AC%E7%9A%84%EF%BC%8C%E6%88%91%E5%B0%B1%E5%AE%89%E8%A3%85%E4%B8%8E%E6%88%91CUDA%E5%AF%B9%E5%BA%94%E7%9A%84CuDNN%E4%BA%86%E3%80%82">https://developer.nvidia.com/cudnn，这里需要你注册一个账号，按照要求注册完就可以下载安装包了，这里我的CUDA安装的是11.2版本的，我就安装与我CUDA对应的CuDNN了。</a></p>
+<p><img src="https://img-blog.csdnimg.cn/20210207181539797.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210207181640966.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20210207181653663.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20210207182505921.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2021020718261918.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210207182914922.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210207183243964.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>windows下好像只有x86版本的…</p>
+</blockquote>
+<p><strong>第二步</strong>：下载好安装包后，利用解压软件解压出来</p>
+<p><img src="https://img-blog.csdnimg.cn/20210207183559185.png" alt="在这里插入图片描述"></p>
+<p><strong>第三步</strong>：复制粘贴 bin、include、lib三个文件夹里的文件到CUDA安装目录的对应文件夹内进行覆盖替换。</p>
+<blockquote>
+<p>CUDA安装目录：<code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1</code></p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20210207185511217.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>注意</strong>：CuDNN下的 lib 文件夹是复制 x64 文件夹下的文件到 CUDA 安装目录下的 lib\x64 中。</p>
+<blockquote>
+<p>注意是<strong>复制文件</strong>到bin、include、lib目录，<strong>不是复制目录</strong>。</p>
+</blockquote>
+<p>CuDNN到此安装成功！</p>
+<h2 id="2-4、安装-Pytorch-GPU-1-7-1"><a href="#2-4、安装-Pytorch-GPU-1-7-1" class="headerlink" title="2.4、安装 Pytorch-GPU 1.7.1"></a>2.4、安装 Pytorch-GPU 1.7.1</h2><p>Pytorch-GPU 有以下三种方式常见的安装方式：</p>
+<ul>
+<li>Conda安装（官网命令下载速度慢，设置镜像源后可加速）</li>
+<li>Pip安装（设置镜像源，设置镜像源后可加速）</li>
+<li>轮子安装（官网下载轮子，轮子安装）</li>
+</ul>
+<p>正式安装 Pytorch-GPU 之前，我们先来为它创建1个虚拟环境。打开 Anaconda Prompt 输入以下命令，新建一个虚拟环境，Python版本为3.7，并切换到该环境下。命名如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n pytorch_gpu python=3.7</span><br><span class="line">conda activate pytorch_gpu</span><br><span class="line">12</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/2021020719071567.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="2-4-1、使用-conda-安装（三种方式选一种即可）"><a href="#2-4-1、使用-conda-安装（三种方式选一种即可）" class="headerlink" title="2.4.1、使用 conda 安装（三种方式选一种即可）"></a>2.4.1、使用 conda 安装（三种方式选一种即可）</h3><p><strong>第一步</strong>：首先我们来到 Pytorch-GPU 的<a href="https://pytorch.org/get-started/locally/">官网</a>，选择CUDA的安装平台以及版本、Conda或者Pip安装,在下方粘贴复制安装命令即可。</p>
+<p><img src="https://img-blog.csdnimg.cn/20210207193054479.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>但是这里下载速度极慢，很容易出现<code>CondaHTTPError</code>，因为默认的镜像是官方的，由于官网的镜像在境外,访问太慢或者不能访问，为了能够加快访问的速度，我们更改Conda下载安装包的镜像源。在 Anaconda Prompt中依次输入下面几条命令即可。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line"></span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line"></span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/</span><br><span class="line"></span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br><span class="line">1234567</span><br></pre></td></tr></table></figure>
+
+<p><strong>第二步</strong>：添加完后，在用户目录下，如：<code>C:\Users\wangxubo</code> ，找到 <code>.condarc</code> 文件，使用notepad++打开，删除里面的 defaults，这样速度能快点。</p>
+<blockquote>
+<p><strong>注意</strong>：用conda安装包的标准语法格式为：<code>conda install -c &lt;channel&gt;&lt;packagename&gt;</code>，而pytorch官网中conda给的命令行是上图那样的，有-c选项，<strong>就说明已经指定了官方下载源，所以自己配置的镜像源不管用</strong>，所以应该把<code>-c pytorch</code>去掉，就可以从镜像源下载文件了。</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">conda install pytorch torchvision torchaudio cudatoolkit=<span class="number">11.0</span></span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<p>输入y，即可正式下载和安装</p>
+<p><strong>友情提示</strong>：如果你想再次换源安装，需要先使用以下命令<code>conda config --remove-key channels</code>恢复默认源的命令，再更换想要的镜像源，否则会报错。</p>
+<blockquote>
+<p><strong>小问题</strong>：我安装的cuda版本是11.1，但是pytorch官网的命令是不提供11.1版本的，我直接用了11.0的命令，但是也是可以用的！这是为什么呢？如果11.0就能代表11.x，那上面为什么还要写10.1、10.2作区分呢？</p>
+</blockquote>
+<h3 id="2-4-2、使用-pip-安装（三种方式选一种即可）"><a href="#2-4-2、使用-pip-安装（三种方式选一种即可）" class="headerlink" title="2.4.2、使用 pip 安装（三种方式选一种即可）"></a>2.4.2、使用 pip 安装（三种方式选一种即可）</h3><p>过程与上述conda类似，不过选择了pip安装方式而已，安装之前最好先换一下源，在命令行依次输入以下命令：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install pip -U</span><br><span class="line"></span><br><span class="line">pip config <span class="built_in">set</span> <span class="keyword">global</span>.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line"><span class="number">123</span></span><br></pre></td></tr></table></figure>
+
+<p>然后到Pytorch<a href="https://pytorch.org/get-started/locally/">官网</a>复制pip安装命令即可，如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install torch===<span class="number">1.7</span><span class="number">.1</span>+cu110 torchvision===<span class="number">0.8</span><span class="number">.2</span>+cu110 torchaudio===<span class="number">0.7</span><span class="number">.2</span> -f https://download.pytorch.org/whl/torch_stable.html</span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-4-3、使用-轮子-安装（三种方式选一种即可）"><a href="#2-4-3、使用-轮子-安装（三种方式选一种即可）" class="headerlink" title="2.4.3、使用 轮子 安装（三种方式选一种即可）"></a>2.4.3、使用 轮子 安装（三种方式选一种即可）</h3><p>比较麻烦，不建议这样，具体方法可自行网上搜索。</p>
+<h3 id="2-4-4、验证-Pytorch-GPU-是否安装成功"><a href="#2-4-4、验证-Pytorch-GPU-是否安装成功" class="headerlink" title="2.4.4、验证 Pytorch-GPU 是否安装成功"></a>2.4.4、验证 Pytorch-GPU 是否安装成功</h3><p>最后我们检测Pytorch-GPU是否安装完成，先使用命令<code>pip list</code>查看已安装的包列表，再输入命令 <code>python</code>，然后一次输入以下代码，若输出<code>True</code>，即安装成功。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import torch</span><br><span class="line">torch.cuda.is_available()</span><br><span class="line">12</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20210207193946415.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210207194103112.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="2-5、安装TensorFlow-GPU-1-14-0"><a href="#2-5、安装TensorFlow-GPU-1-14-0" class="headerlink" title="2.5、安装TensorFlow-GPU 1.14.0"></a>2.5、安装TensorFlow-GPU 1.14.0</h2><h3 id="2-5-1、使用conda安装"><a href="#2-5-1、使用conda安装" class="headerlink" title="2.5.1、使用conda安装"></a>2.5.1、使用conda安装</h3><p>TensorFlow版本与Python、CUDA、CuDNN版本之间的对应关系见<a href="https://www.tensorflow.org/install/source_windows#gpu">官网</a>。<br><img src="https://img-blog.csdnimg.cn/20210208135648180.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>首先还是先创建一个虚拟环境，并切换到该虚拟环境下，命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n tensorflow_gpu python=3.7</span><br><span class="line">conda activate tensorflow_gpu</span><br><span class="line">12</span><br></pre></td></tr></table></figure>
+
+<p>接着使用如下命令安装GPU版本的TensorFlow，这种方式可以自动安装与之匹配的CUDA和CuDNN。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">conda install tensorflow_gpu=<span class="number">1.14</span><span class="number">.0</span></span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20210208190345239.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p><strong>小问题</strong>：上面我安装的CUDA版本是11.1，但是TensorFlow1.14.0按照官网的说法应该用CUDA10，显然不匹配。但是我使用<code>conda install tensorflow_gpu=1.14.0</code>这条命令安装的TensorFlow它自带CUDA10.0.130和CuDNN7.6.5。那它是怎么选择对应的CUDA版本呢？</p>
+</blockquote>
+<h3 id="2-5-2、验证TensorFlow-GPU是否安装成功"><a href="#2-5-2、验证TensorFlow-GPU是否安装成功" class="headerlink" title="2.5.2、验证TensorFlow-GPU是否安装成功"></a>2.5.2、验证TensorFlow-GPU是否安装成功</h3><p>首先输入python，进入到python编程环境，然后依次输入以下代码，如果最后输出GPU True，则说明TensorFlow-GPU安装成功。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;GPU&#x27;</span>,tf.test.is_gpu_available())</span><br><span class="line"><span class="number">12</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20210208193741879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a href="https://zhuanlan.zhihu.com/p/142713799">Python学习—Anaconda详细 下载、安装与使用，以及如何创建虚拟环境，不仅仅只有安装步骤哦</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/143881055">想要使用GPU进行加速？那你必须事先了解CUDA和cuDNN</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/144311348">保姆级的CUDA的下载安装使用，详细的环境变量配置，不仅仅让你能够安装，还会教你弄懂为什么要这样安装</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/144575524">官网安装Python包太慢？教你三种Pytorch的下载安装方式，保证你再也不用出现Error</a></li>
+<li><a href="https://blog.csdn.net/L1778586311/article/details/112425993">pytorch gpu版本的小白安装教程，含环境配置、CUDA（百度云下载）安装程序失败解决方案</a></li>
+<li><a href="https://baijiahao.baidu.com/s?id=1642066951908423637&wfr=spider&for=pc">分不清核显和独显？一分钟带你了解清楚</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/54350088">windows10下安装GPU版pytorch简明教程</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/336429888">【保姆级教程】个人深度学习工作站配置指南</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/94220564">win10安装CUDA和cuDNN的正确姿势</a></li>
+<li><a href="https://blog.csdn.net/qq_27825451/article/details/89082978">tensorflow各个版本的CUDA以及Cudnn版本对应关系</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>电脑</category>
+      </categories>
+      <tags>
+        <tag>电脑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建SSR服务器</title>
+    <url>/2018/05/12/2018-05-12-SSR/</url>
+    <content><![CDATA[<p> <img src="https://i.imgur.com/qH9PTxO.jpg"></p>
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/WEaCBMmla-0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=529316794&auto=0&height=66"></iframe>
+   SSR开始搭建
+
+<p>   ——————原文章   <a href="https://doub.io/ss-jc60/">https://doub.io/ss-jc60/</a> ——————   常见问题  <a href="https://doub.io/ss-jc39/">https://doub.io/ss-jc39/</a> {访问需要科学上网}</p>
+<p>   由虚度二次创作（快速版）</p>
+<p>   工具  <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a> </p>
+<span id="more"></span>
+<p>   在开始登陆服务器之前，我们先打开命令行ping一下自己服务器上的IP地址是否能ping通 </p>
+<p>   方法：ctrl+r   cmd   ping ip</p>
+<pre><code>          ssh root@ip
+</code></pre>
+<p>  单线程（1-2个人用）  wget -N –no-check-certificate <a href="https://softs.loan/Bash/ssr.sh">https://softs.loan/Bash/ssr.sh</a> &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh</p>
+<pre><code>备用 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh
+
+  bash ssr.sh
+</code></pre>
+<p>  多用户（支持限制流量） wget -N –no-check-certificate <a href="https://softs.fun/Bash/ssrmu.sh">https://softs.fun/Bash/ssrmu.sh</a> &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh</p>
+<pre><code>备用  wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh
+
+  bash ssrmu.sh
+</code></pre>
+<p>   谷歌BBR加速</p>
+<pre><code>     wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
+
+
+    chmod +x bbr.sh
+
+
+     ./bbr.sh
+</code></pre>
+<p>   windows软件（SSR）:<br>   <a href="https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases">https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases</a><br>   <a href="https://sxsjs123.github.io/xizai/WDSSR.zip">https://sxsjs123.github.io/xizai/WDSSR.zip</a><br>   安卓软件（SSR）:<br>   <a href="https://sxsjs123.github.io/xizai/AZSSR.zip">https://sxsjs123.github.io/xizai/AZSSR.zip</a></p>
+<p>  注意脚本不能用了用这个 </p>
+<pre><code>         wget -N --no-check-certificate https://sxsjs123.github.io/xizai/ssr.sh &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh
+</code></pre>
+]]></content>
+      <tags>
+        <tag>电脑</tag>
+      </tags>
+  </entry>
+</search>

@@ -20,28 +20,89 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="空白世界">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）（转载）https:&#x2F;&#x2F;blog.csdn.net&#x2F;ReCclay&#x2F;article&#x2F;details&#x2F;113740950 文章目录 一、基础知识储备 二、Nvidia显卡驱动 + CUDA + CuDNN 安装指南  2.1、如何查看自己电脑是否可以使用GPU加速？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cuda">
+<meta property="og:url" content="http://example.com/2021/02/09/20210209-cuda/index.html">
 <meta property="og:site_name" content="空白世界">
+<meta property="og:description" content="【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）（转载）https:&#x2F;&#x2F;blog.csdn.net&#x2F;ReCclay&#x2F;article&#x2F;details&#x2F;113740950 文章目录 一、基础知识储备 二、Nvidia显卡驱动 + CUDA + CuDNN 安装指南  2.1、如何查看自己电脑是否可以使用GPU加速？">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207145455554.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2021020715042634.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207150545406.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207155411214.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207154437709.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2021020715440369.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207154521944.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207154312400.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207154503199.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207154947273.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207183851986.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207155850748.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207162108809.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2021020716215119.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207162202811.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207162417457.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207162635105.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207162657366.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207164609409.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2021020716385882.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207164448350.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207171507116.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207171649491.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2021020717171248.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207172029707.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207172045786.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207172106509.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207172312585.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207172328371.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2021020717235315.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207172557735.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207172640134.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207172824103.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207174016175.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207174433856.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207174507549.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207175005905.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207174920236.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207175611524.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207181539797.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207181640966.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207181653663.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207182505921.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2021020718261918.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207182914922.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207183243964.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207183559185.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207185511217.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2021020719071567.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207193054479.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207193946415.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210207194103112.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210208135648180.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210208190345239.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210208193741879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
+<meta property="article:published_time" content="2021-02-09T11:50:31.000Z">
+<meta property="article:modified_time" content="2021-02-09T09:05:05.319Z">
 <meta property="article:author" content="suker">
+<meta property="article:tag" content="电脑">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20210207145455554.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlQ2NsYXk=,size_16,color_FFFFFF,t_70">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2021/02/09/20210209-cuda/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>空白世界</title>
+  <title>cuda | 空白世界</title>
   
 
 
@@ -188,76 +249,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/18/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.webp">
-      <meta itemprop="name" content="suker">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="空白世界">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/10/18/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-10-18 14:53:31 / 修改时间：17:15:09" itemprop="dateCreated datePublished" datetime="2022-10-18T14:53:31+08:00">2022-10-18</time>
-            </span>
-
-          
-
-        </div>
-      </header>
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/10/18/hello-world/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -273,10 +268,9 @@
       <meta itemprop="name" content="空白世界">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/09/20210209-cuda/" class="post-title-link" itemprop="url">cuda</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          cuda
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -309,7 +303,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="【深度学习环境搭建】Pytorch-GPU1-7-1-和-TensorFlow-GPU1-14-0-安装指南（基于windows10）"><a href="#【深度学习环境搭建】Pytorch-GPU1-7-1-和-TensorFlow-GPU1-14-0-安装指南（基于windows10）" class="headerlink" title="【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）"></a>【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）</h1><p>（转载）<a target="_blank" rel="noopener" href="https://blog.csdn.net/ReCclay/article/details/113740950">https://blog.csdn.net/ReCclay/article/details/113740950</a></p>
+        <h1 id="【深度学习环境搭建】Pytorch-GPU1-7-1-和-TensorFlow-GPU1-14-0-安装指南（基于windows10）"><a href="#【深度学习环境搭建】Pytorch-GPU1-7-1-和-TensorFlow-GPU1-14-0-安装指南（基于windows10）" class="headerlink" title="【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）"></a>【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）</h1><p>（转载）<a target="_blank" rel="noopener" href="https://blog.csdn.net/ReCclay/article/details/113740950">https://blog.csdn.net/ReCclay/article/details/113740950</a></p>
 <h3 id="文章目录"><a href="#文章目录" class="headerlink" title="文章目录"></a>文章目录</h3><ul>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/ReCclay/article/details/113740950#_4">一、基础知识储备</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/ReCclay/article/details/113740950#Nvidia__CUDA__CuDNN__14">二、Nvidia显卡驱动 + CUDA + CuDNN 安装指南</a></li>
@@ -562,414 +556,36 @@
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_27825451/article/details/89082978">tensorflow各个版本的CUDA以及Cudnn版本对应关系</a></li>
 </ul>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/%E7%94%B5%E8%84%91/" rel="tag"># 电脑</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2018/06/07/2018-06-07-MFSS-SSR/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.webp">
-      <meta itemprop="name" content="suker">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="空白世界">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/06/07/2018-06-07-MFSS-SSR/" class="post-title-link" itemprop="url">免费的ss/ssr</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2018-06-07 19:19:37" itemprop="dateCreated datePublished" datetime="2018-06-07T19:19:37+08:00">2018-06-07</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-09 14:36:22" itemprop="dateModified" datetime="2020-03-09T14:36:22+08:00">2020-03-09</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%B5%E8%84%91/" itemprop="url" rel="index"><span itemprop="name">电脑</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><a target="_blank" rel="noopener" href="https://my.ishadowx.net/">https://my.ishadowx.net/</a></p>
-<p>免费SS信息<br>所有服务器将被重置并每6小时更改一次密码。</p>
-<p><a target="_blank" rel="noopener" href="https://get.ss8.fun/#free">https://get.ss8.fun/#free</a></p>
-<p>SS配置<br>扫描QRCODE以自动配置服务器。每4小时重置一次。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2018/06/07/2018-06-07-VPSGJ/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.webp">
-      <meta itemprop="name" content="suker">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="空白世界">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/06/07/2018-06-07-VPSGJ/" class="post-title-link" itemprop="url">VPS链接工具</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2018-06-07 18:07:52" itemprop="dateCreated datePublished" datetime="2018-06-07T18:07:52+08:00">2018-06-07</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-10-18 17:13:30" itemprop="dateModified" datetime="2022-10-18T17:13:30+08:00">2022-10-18</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%B5%E8%84%91/" itemprop="url" rel="index"><span itemprop="name">电脑</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>简单点直接<br><img src="https://i.imgur.com/NhxBamw.png"><br><img src="https://i.imgur.com/uArdJ02.png"></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2018/06/07/2018-06-07-VPSGJ/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2018/05/26/2018-05-26-office2016/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.webp">
-      <meta itemprop="name" content="suker">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="空白世界">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/05/26/2018-05-26-office2016/" class="post-title-link" itemprop="url">Microsoft Office 2016 简体中文版</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2018-05-26 14:20:00" itemprop="dateCreated datePublished" datetime="2018-05-26T14:20:00+08:00">2018-05-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-09 14:36:22" itemprop="dateModified" datetime="2020-03-09T14:36:22+08:00">2020-03-09</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%B5%E8%84%91/" itemprop="url" rel="index"><span itemprop="name">电脑</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Microsoft office 2016官方版是针对Windows 10环境从零全新开发的通用应用（Universal App）。office2016正式版中的Word将会增加“Insights for Office”、“Read Mode”等新功能，powerpoint增加了“Presenter View”功能，相信全新的office 2016让我们的办公生活更加先进！现提供Office2016官方下载。</p>
-<p>下载链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1YVwWIP_I1uJ6xhYAnxxEmQ">https://pan.baidu.com/s/1YVwWIP_I1uJ6xhYAnxxEmQ</a> 密码：iptq</p>
-<p>1、将下载好的Office 2016解压，解压后，双击运行setup.exe。<br><img src="https://i.imgur.com/PkLDdBT.jpg"><br>2、然后就是等待安装完成，如果安装顺利，最终会出现安装成功。如果中途报错，那么就是安装失败，出现错误代码，那么就要安照步骤重新安装，或者是电脑之前的office没有卸载干净，需先卸载干净再安装office2016。</p>
-<p>　微软官方序列号（产品激活密钥）：NKGG6-WBPCC-HXWMY-6DQGJ-CPQVG。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2018/05/25/2018-05-25-DNWT/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.webp">
-      <meta itemprop="name" content="suker">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="空白世界">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/05/25/2018-05-25-DNWT/" class="post-title-link" itemprop="url">电脑问题</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2018-05-25 21:27:02" itemprop="dateCreated datePublished" datetime="2018-05-25T21:27:02+08:00">2018-05-25</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-09 14:36:22" itemprop="dateModified" datetime="2020-03-09T14:36:22+08:00">2020-03-09</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%B5%E8%84%91/" itemprop="url" rel="index"><span itemprop="name">电脑</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>USB接口也出现“该设备无法启动。 (代码 10)，系统资源不够，无法完成 API。”<br>出现USB这类的硬件无法使用  需要检查一下 设备管理器  里的这个<br><img src="https://i.imgur.com/0DPSbxR.png"><br>看是否有感叹号（有问题的硬件）<br>然后<br>解决方法如下：打开注册表编辑器：开始-&gt;运行-&gt;regedit，找到下面注册表项：HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\ {36FC9E60-C465-11CF-8056-444553540000} </p>
-<p>在右边的项目中找到“upperfilter“项或者”lowerfilter“项，然后删除，再进入设备管理器中把通行串行总路线控制器的感叹号项目删除，再点右键”扫描检测硬件改动“，系统则会重新安装驱动，这样问题就迎刃而解。这种问题主要是量产工具自身带的驱动导致的，并且一般量产工具也都提供驱动卸载的功能。所以在量产完成后，执行驱动卸载工具，把量产工具自带的驱动卸载掉，即不会发生此现象。</p>
-<p>需要全部卸载驱动 如下图<br><img src="https://i.imgur.com/K1iChAz.png"><br>扫描检测硬件改动 如下图<br><img src="https://i.imgur.com/TYllNCy.png"></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2018/05/12/2018-05-12-SSR/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.webp">
-      <meta itemprop="name" content="suker">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="空白世界">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/05/12/2018-05-12-SSR/" class="post-title-link" itemprop="url">搭建SSR服务器</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2018-05-12 16:47:56" itemprop="dateCreated datePublished" datetime="2018-05-12T16:47:56+08:00">2018-05-12</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-10-18 17:13:36" itemprop="dateModified" datetime="2022-10-18T17:13:36+08:00">2022-10-18</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p> <img src="https://i.imgur.com/qH9PTxO.jpg"></p>
-<iframe width="100%" height="415" src="https://www.youtube.com/embed/WEaCBMmla-0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
-
-   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=529316794&auto=0&height=66"></iframe>
-   SSR开始搭建
-
-<p>   ——————原文章   <a target="_blank" rel="noopener" href="https://doub.io/ss-jc60/">https://doub.io/ss-jc60/</a> ——————   常见问题  <a target="_blank" rel="noopener" href="https://doub.io/ss-jc39/">https://doub.io/ss-jc39/</a> {访问需要科学上网}</p>
-<p>   由虚度二次创作（快速版）</p>
-<p>   工具  <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a> </p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2018/05/12/2018-05-12-SSR/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2018/06/07/2018-06-07-MFSS-SSR/" rel="prev" title="免费的ss/ssr">
+      <i class="fa fa-chevron-left"></i> 免费的ss/ssr
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/10/18/hello-world/" rel="next" title="Hello World">
+      Hello World <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -1022,6 +638,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%80%90%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E3%80%91Pytorch-GPU1-7-1-%E5%92%8C-TensorFlow-GPU1-14-0-%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97%EF%BC%88%E5%9F%BA%E4%BA%8Ewindows10%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">【深度学习环境搭建】Pytorch-GPU1.7.1 和 TensorFlow-GPU1.14.0 安装指南（基于windows10）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95"><span class="nav-number">1.0.1.</span> <span class="nav-text">文章目录</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87"><span class="nav-number">2.</span> <span class="nav-text">一、基础知识储备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81Nvidia%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8-CUDA-CuDNN-%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97"><span class="nav-number">3.</span> <span class="nav-text">二、Nvidia显卡驱动 + CUDA + CuDNN 安装指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1%E3%80%81%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E8%87%AA%E5%B7%B1%E7%94%B5%E8%84%91%E6%98%AF%E5%90%A6%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8GPU%E5%8A%A0%E9%80%9F%EF%BC%9F"><span class="nav-number">3.1.</span> <span class="nav-text">2.1、如何查看自己电脑是否可以使用GPU加速？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2%E3%80%81CUDA%E5%AE%89%E8%A3%85"><span class="nav-number">3.2.</span> <span class="nav-text">2.2、CUDA安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-1%E3%80%81CUDA-%E5%AE%89%E8%A3%85%E5%89%8D%E7%9A%84%E7%B5%AE%E5%8F%A8"><span class="nav-number">3.2.1.</span> <span class="nav-text">2.2.1、CUDA 安装前的絮叨</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-2%E3%80%81%E6%9F%A5%E7%9C%8B%E6%98%BE%E5%8D%A1%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81CUDA"><span class="nav-number">3.2.2.</span> <span class="nav-text">2.2.2、查看显卡是否支持CUDA</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-3%E3%80%81%E5%AE%89%E8%A3%85-Nvidia-%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8"><span class="nav-number">3.2.3.</span> <span class="nav-text">2.2.3、安装 Nvidia 显卡驱动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-3%E3%80%81%E5%AE%89%E8%A3%85-Visual-Studio"><span class="nav-number">3.2.4.</span> <span class="nav-text">2.2.3、安装 Visual Studio</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-4%E3%80%81%E5%AE%89%E8%A3%85-CUDA"><span class="nav-number">3.2.5.</span> <span class="nav-text">2.2.4、安装 CUDA</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3%E3%80%81%E5%AE%89%E8%A3%85CuDNN"><span class="nav-number">3.3.</span> <span class="nav-text">2.3、安装CuDNN</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-1%E3%80%81%E5%86%8D%E6%8D%8B%E4%B8%80%E4%B8%8B%EF%BC%9ANVIDIA%E7%9A%84%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8%E5%99%A8%E3%80%81CUDA%E5%92%8CcuDNN%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-number">3.3.1.</span> <span class="nav-text">2.3.1、再捋一下：NVIDIA的显卡驱动器、CUDA和cuDNN的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-2%E3%80%81CuDNN%E7%9A%84%E4%B8%8B%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85"><span class="nav-number">3.3.2.</span> <span class="nav-text">2.3.2、CuDNN的下载与安装</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4%E3%80%81%E5%AE%89%E8%A3%85-Pytorch-GPU-1-7-1"><span class="nav-number">3.4.</span> <span class="nav-text">2.4、安装 Pytorch-GPU 1.7.1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-1%E3%80%81%E4%BD%BF%E7%94%A8-conda-%E5%AE%89%E8%A3%85%EF%BC%88%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F%E9%80%89%E4%B8%80%E7%A7%8D%E5%8D%B3%E5%8F%AF%EF%BC%89"><span class="nav-number">3.4.1.</span> <span class="nav-text">2.4.1、使用 conda 安装（三种方式选一种即可）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-2%E3%80%81%E4%BD%BF%E7%94%A8-pip-%E5%AE%89%E8%A3%85%EF%BC%88%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F%E9%80%89%E4%B8%80%E7%A7%8D%E5%8D%B3%E5%8F%AF%EF%BC%89"><span class="nav-number">3.4.2.</span> <span class="nav-text">2.4.2、使用 pip 安装（三种方式选一种即可）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-3%E3%80%81%E4%BD%BF%E7%94%A8-%E8%BD%AE%E5%AD%90-%E5%AE%89%E8%A3%85%EF%BC%88%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F%E9%80%89%E4%B8%80%E7%A7%8D%E5%8D%B3%E5%8F%AF%EF%BC%89"><span class="nav-number">3.4.3.</span> <span class="nav-text">2.4.3、使用 轮子 安装（三种方式选一种即可）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-4%E3%80%81%E9%AA%8C%E8%AF%81-Pytorch-GPU-%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F"><span class="nav-number">3.4.4.</span> <span class="nav-text">2.4.4、验证 Pytorch-GPU 是否安装成功</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-5%E3%80%81%E5%AE%89%E8%A3%85TensorFlow-GPU-1-14-0"><span class="nav-number">3.5.</span> <span class="nav-text">2.5、安装TensorFlow-GPU 1.14.0</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-1%E3%80%81%E4%BD%BF%E7%94%A8conda%E5%AE%89%E8%A3%85"><span class="nav-number">3.5.1.</span> <span class="nav-text">2.5.1、使用conda安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-2%E3%80%81%E9%AA%8C%E8%AF%81TensorFlow-GPU%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F"><span class="nav-number">3.5.2.</span> <span class="nav-text">2.5.2、验证TensorFlow-GPU是否安装成功</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
