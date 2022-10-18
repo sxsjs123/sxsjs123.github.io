@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>VPS链接工具</title>
-    <url>/2018/06/07/2018-06-07-VPSGJ/</url>
-    <content><![CDATA[<p>简单点直接</p>
+    <title>电脑问题</title>
+    <url>/2018/05/25/2018-05-25-DNWT/</url>
+    <content><![CDATA[<p>USB接口也出现“该设备无法启动。 (代码 10)，系统资源不够，无法完成 API。”<br>出现USB这类的硬件无法使用  需要检查一下 设备管理器  里的这个</p>
 <span id="more"></span>
-<p><img src="https://i.imgur.com/NhxBamw.png"><br><img src="https://i.imgur.com/uArdJ02.png"></p>
-<!--more-->
-
-
-<p>下载链接：<a href="https://sxsjs123.github.io/xizai/BitviseSSH%E5%B7%A5%E5%85%B7.zip">https://sxsjs123.github.io/xizai/BitviseSSH工具.zip</a></p>
+<p><img src="https://i.imgur.com/0DPSbxR.png"><br>看是否有感叹号（有问题的硬件）<br>然后<br>解决方法如下：打开注册表编辑器：开始-&gt;运行-&gt;regedit，找到下面注册表项：HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\ {36FC9E60-C465-11CF-8056-444553540000} </p>
+<p>在右边的项目中找到“upperfilter“项或者”lowerfilter“项，然后删除，再进入设备管理器中把通行串行总路线控制器的感叹号项目删除，再点右键”扫描检测硬件改动“，系统则会重新安装驱动，这样问题就迎刃而解。这种问题主要是量产工具自身带的驱动导致的，并且一般量产工具也都提供驱动卸载的功能。所以在量产完成后，执行驱动卸载工具，把量产工具自带的驱动卸载掉，即不会发生此现象。</p>
+<p>需要全部卸载驱动 如下图<br><img src="https://i.imgur.com/K1iChAz.png"><br>扫描检测硬件改动 如下图<br><img src="https://i.imgur.com/TYllNCy.png"></p>
 ]]></content>
       <categories>
         <category>电脑</category>
@@ -36,13 +34,9 @@
       </tags>
   </entry>
   <entry>
-    <title>电脑问题</title>
-    <url>/2018/05/25/2018-05-25-DNWT/</url>
-    <content><![CDATA[<p>USB接口也出现“该设备无法启动。 (代码 10)，系统资源不够，无法完成 API。”<br>出现USB这类的硬件无法使用  需要检查一下 设备管理器  里的这个</p>
-<span id="more"></span>
-<p><img src="https://i.imgur.com/0DPSbxR.png"><br>看是否有感叹号（有问题的硬件）<br>然后<br>解决方法如下：打开注册表编辑器：开始-&gt;运行-&gt;regedit，找到下面注册表项：HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\ {36FC9E60-C465-11CF-8056-444553540000} </p>
-<p>在右边的项目中找到“upperfilter“项或者”lowerfilter“项，然后删除，再进入设备管理器中把通行串行总路线控制器的感叹号项目删除，再点右键”扫描检测硬件改动“，系统则会重新安装驱动，这样问题就迎刃而解。这种问题主要是量产工具自身带的驱动导致的，并且一般量产工具也都提供驱动卸载的功能。所以在量产完成后，执行驱动卸载工具，把量产工具自带的驱动卸载掉，即不会发生此现象。</p>
-<p>需要全部卸载驱动 如下图<br><img src="https://i.imgur.com/K1iChAz.png"><br>扫描检测硬件改动 如下图<br><img src="https://i.imgur.com/TYllNCy.png"></p>
+    <title>frp远程控制电脑</title>
+    <url>/2022/10/18/2022-10-18-frp/</url>
+    <content><![CDATA[<p>简单点直接<span id="more"></span></p>
 ]]></content>
       <categories>
         <category>电脑</category>
@@ -317,9 +311,15 @@
       </tags>
   </entry>
   <entry>
-    <title>frp远程控制电脑</title>
-    <url>/2022/10/18/2022-10-18-frp/</url>
-    <content><![CDATA[<p>简单点直接<span id="more"></span></p>
+    <title>VPS链接工具</title>
+    <url>/2018/06/07/2018-06-07-VPSGJ/</url>
+    <content><![CDATA[<p>简单点直接</p>
+<span id="more"></span>
+<p><img src="https://i.imgur.com/NhxBamw.png"><br><img src="https://i.imgur.com/uArdJ02.png"></p>
+<!--more-->
+
+
+<p>下载链接：<a href="https://sxsjs123.github.io/xizai/BitviseSSH%E5%B7%A5%E5%85%B7.zip">https://sxsjs123.github.io/xizai/BitviseSSH工具.zip</a></p>
 ]]></content>
       <categories>
         <category>电脑</category>
