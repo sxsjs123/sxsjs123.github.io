@@ -28,7 +28,7 @@
 <meta property="og:description" content="frp 是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-10-18T12:31:52.000Z">
-<meta property="article:modified_time" content="2022-10-18T13:44:02.195Z">
+<meta property="article:modified_time" content="2022-10-19T12:50:19.911Z">
 <meta property="article:author" content="suker">
 <meta property="article:tag" content="电脑">
 <meta name="twitter:card" content="summary">
@@ -222,10 +222,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-10-18 20:31:52 / 修改时间：21:44:02" itemprop="dateCreated datePublished" datetime="2022-10-18T20:31:52+08:00">2022-10-18</time>
+              <time title="创建时间：2022-10-18 20:31:52" itemprop="dateCreated datePublished" datetime="2022-10-18T20:31:52+08:00">2022-10-18</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-10-19 20:50:19" itemprop="dateModified" datetime="2022-10-19T20:50:19+08:00">2022-10-19</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -242,7 +248,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>86</span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -261,7 +267,29 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h6 id="frp-是一个专注于内网穿透的高性能的反向代理应用，支持-TCP、UDP、HTTP、HTTPS-等多种协议。可以将内网服务以安全、便捷的方式通过具有公网-IP-节点的中转暴露到公网。"><a href="#frp-是一个专注于内网穿透的高性能的反向代理应用，支持-TCP、UDP、HTTP、HTTPS-等多种协议。可以将内网服务以安全、便捷的方式通过具有公网-IP-节点的中转暴露到公网。" class="headerlink" title="frp 是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。"></a>frp 是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。<span id="more"></span></h6>
+        <h6 id="frp-是一个专注于内网穿透的高性能的反向代理应用，支持-TCP、UDP、HTTP、HTTPS-等多种协议。可以将内网服务以安全、便捷的方式通过具有公网-IP-节点的中转暴露到公网。"><a href="#frp-是一个专注于内网穿透的高性能的反向代理应用，支持-TCP、UDP、HTTP、HTTPS-等多种协议。可以将内网服务以安全、便捷的方式通过具有公网-IP-节点的中转暴露到公网。" class="headerlink" title="frp 是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。"></a>frp 是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。<span id="more"></span></h6><p>首先我的教程是引用—-<a target="_blank" rel="noopener" href="https://freefrp.net/">https://freefrp.net/</a> ——-站长的东西，这里只是进行一个记录。看不懂我的去这个网站自己研究。</p>
+<p>第一步</p>
+<p>首先去frp的官方网站下载对应的软件安装包 <a target="_blank" rel="noopener" href="https://github.com/fatedier/frp/releases">https://github.com/fatedier/frp/releases</a></p>
+<p>第二步</p>
+<p>去<a target="_blank" rel="noopener" href="https://freefrp.net/">https://freefrp.net/</a> 找一个中转服务器。</p>
+<p>第三步</p>
+<p>解压你拿到的文件找到frpc.ini</p>
+<h2 id="示例-frpc-ini-配置文件"><a href="#示例-frpc-ini-配置文件" class="headerlink" title="示例 frpc.ini 配置文件"></a>示例 frpc.ini 配置文件</h2><p>请详细阅读每条参数的说明并修改,错误的参数会直接导致 frp 无法启动.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">[common]</span><br><span class="line">server_addr = frp.freefrp.net</span><br><span class="line">server_port = 7000</span><br><span class="line">token = freefrp.net</span><br><span class="line"></span><br><span class="line"># 以上为frp服务器信息</span><br><span class="line"></span><br><span class="line"># 以下为本地内网客户端信息</span><br><span class="line"></span><br><span class="line"># 群晖DS1815+管理页面</span><br><span class="line"></span><br><span class="line">[DS1815_DSM_HTTP]</span><br><span class="line">type = http</span><br><span class="line">local_ip = 192.168.1.2</span><br><span class="line">local_port = 5000</span><br><span class="line"></span><br><span class="line">[DS1815_DSM_HTTPS]</span><br><span class="line">type = https</span><br><span class="line">local_ip = 192.168.1.2</span><br><span class="line">local_port = 5001</span><br><span class="line"># 群晖Drive 桌面客户端</span><br><span class="line"></span><br><span class="line">[DS1815_Drive_Desktop]</span><br><span class="line">type = tcp</span><br><span class="line">local_ip = 192.168.1.2</span><br><span class="line">local_port = 6690</span><br><span class="line">remote_port = 46690</span><br></pre></td></tr></table></figure>
+
+<p>按照以上进行修改之后保存</p>
+<h2 id="如何启动服务"><a href="#如何启动服务" class="headerlink" title="如何启动服务"></a>如何启动服务</h2><p>首先在桌面新建start.sh填入一下代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">:home</span><br><span class="line">frpc -c frpc.ini</span><br><span class="line">goto home</span><br></pre></td></tr></table></figure>
+
+<p>然后把这个文件保存放入frp的文价夹内双击打开看是否有成功的标志。</p>
+<p>如果没什么问题话想长久用请看下面的进阶</p>
+<h2 id="进阶：如何启动服务而没有黑框"><a href="#进阶：如何启动服务而没有黑框" class="headerlink" title="进阶：如何启动服务而没有黑框"></a>进阶：如何启动服务而没有黑框</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">if &quot;%1&quot; == &quot;h&quot; goto begin</span><br><span class="line">mshta vbscript:createobject(&quot;wscript.shell&quot;).run(&quot;&quot;&quot;%~nx0&quot;&quot; h&quot;,0)(window.close)&amp;&amp;exit</span><br><span class="line"></span><br><span class="line">:begin</span><br><span class="line">REM</span><br><span class="line">.\frpc.exe -c .\frpc.ini</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>这种方法也是需要每次开机双击这个文件才能用。如何开机自启请自行百度</strong></p>
+<h1 id="设置好如何使用"><a href="#设置好如何使用" class="headerlink" title="设置好如何使用"></a>设置好如何使用</h1><p>win10为例—-设置—–系统—-远程控制——设置电脑接入电源永不休眠—。</p>
+<p>手机和其他设备控制电脑—-下载微软远程桌面app</p>
+<p><strong>电脑控制这个电脑直接电脑搜索远程桌面名称填  frp.freefrp.net  账号密码是你的微软账号密码</strong>。</p>
+
     </div>
 
     
@@ -344,7 +372,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#frp-%E6%98%AF%E4%B8%80%E4%B8%AA%E4%B8%93%E6%B3%A8%E4%BA%8E%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E7%9A%84%E9%AB%98%E6%80%A7%E8%83%BD%E7%9A%84%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E5%BA%94%E7%94%A8%EF%BC%8C%E6%94%AF%E6%8C%81-TCP%E3%80%81UDP%E3%80%81HTTP%E3%80%81HTTPS-%E7%AD%89%E5%A4%9A%E7%A7%8D%E5%8D%8F%E8%AE%AE%E3%80%82%E5%8F%AF%E4%BB%A5%E5%B0%86%E5%86%85%E7%BD%91%E6%9C%8D%E5%8A%A1%E4%BB%A5%E5%AE%89%E5%85%A8%E3%80%81%E4%BE%BF%E6%8D%B7%E7%9A%84%E6%96%B9%E5%BC%8F%E9%80%9A%E8%BF%87%E5%85%B7%E6%9C%89%E5%85%AC%E7%BD%91-IP-%E8%8A%82%E7%82%B9%E7%9A%84%E4%B8%AD%E8%BD%AC%E6%9A%B4%E9%9C%B2%E5%88%B0%E5%85%AC%E7%BD%91%E3%80%82"><span class="nav-number">1.</span> <span class="nav-text">frp 是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#frp-%E6%98%AF%E4%B8%80%E4%B8%AA%E4%B8%93%E6%B3%A8%E4%BA%8E%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E7%9A%84%E9%AB%98%E6%80%A7%E8%83%BD%E7%9A%84%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E5%BA%94%E7%94%A8%EF%BC%8C%E6%94%AF%E6%8C%81-TCP%E3%80%81UDP%E3%80%81HTTP%E3%80%81HTTPS-%E7%AD%89%E5%A4%9A%E7%A7%8D%E5%8D%8F%E8%AE%AE%E3%80%82%E5%8F%AF%E4%BB%A5%E5%B0%86%E5%86%85%E7%BD%91%E6%9C%8D%E5%8A%A1%E4%BB%A5%E5%AE%89%E5%85%A8%E3%80%81%E4%BE%BF%E6%8D%B7%E7%9A%84%E6%96%B9%E5%BC%8F%E9%80%9A%E8%BF%87%E5%85%B7%E6%9C%89%E5%85%AC%E7%BD%91-IP-%E8%8A%82%E7%82%B9%E7%9A%84%E4%B8%AD%E8%BD%AC%E6%9A%B4%E9%9C%B2%E5%88%B0%E5%85%AC%E7%BD%91%E3%80%82"><span class="nav-number">1.</span> <span class="nav-text">frp 是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-frpc-ini-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number"></span> <span class="nav-text">示例 frpc.ini 配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1"><span class="nav-number"></span> <span class="nav-text">如何启动服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9B%E9%98%B6%EF%BC%9A%E5%A6%82%E4%BD%95%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1%E8%80%8C%E6%B2%A1%E6%9C%89%E9%BB%91%E6%A1%86"><span class="nav-number"></span> <span class="nav-text">进阶：如何启动服务而没有黑框</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%A5%BD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8"><span class="nav-number"></span> <span class="nav-text">设置好如何使用</span></a></div>
       </div>
       <!--/noindex-->
 
@@ -424,13 +452,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">11k</span>
+    <span title="站点总字数">12k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">10 分钟</span>
+    <span title="站点阅读时长">11 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>

@@ -54,7 +54,29 @@
   <entry>
     <title>frp远程控制电脑</title>
     <url>/2022/10/18/2022-10-18-frp/</url>
-    <content><![CDATA[<h6 id="frp-是一个专注于内网穿透的高性能的反向代理应用，支持-TCP、UDP、HTTP、HTTPS-等多种协议。可以将内网服务以安全、便捷的方式通过具有公网-IP-节点的中转暴露到公网。"><a href="#frp-是一个专注于内网穿透的高性能的反向代理应用，支持-TCP、UDP、HTTP、HTTPS-等多种协议。可以将内网服务以安全、便捷的方式通过具有公网-IP-节点的中转暴露到公网。" class="headerlink" title="frp 是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。"></a>frp 是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。<span id="more"></span></h6>]]></content>
+    <content><![CDATA[<h6 id="frp-是一个专注于内网穿透的高性能的反向代理应用，支持-TCP、UDP、HTTP、HTTPS-等多种协议。可以将内网服务以安全、便捷的方式通过具有公网-IP-节点的中转暴露到公网。"><a href="#frp-是一个专注于内网穿透的高性能的反向代理应用，支持-TCP、UDP、HTTP、HTTPS-等多种协议。可以将内网服务以安全、便捷的方式通过具有公网-IP-节点的中转暴露到公网。" class="headerlink" title="frp 是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。"></a>frp 是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。<span id="more"></span></h6><p>首先我的教程是引用—-<a href="https://freefrp.net/">https://freefrp.net/</a> ——-站长的东西，这里只是进行一个记录。看不懂我的去这个网站自己研究。</p>
+<p>第一步</p>
+<p>首先去frp的官方网站下载对应的软件安装包 <a href="https://github.com/fatedier/frp/releases">https://github.com/fatedier/frp/releases</a></p>
+<p>第二步</p>
+<p>去<a href="https://freefrp.net/">https://freefrp.net/</a> 找一个中转服务器。</p>
+<p>第三步</p>
+<p>解压你拿到的文件找到frpc.ini</p>
+<h2 id="示例-frpc-ini-配置文件"><a href="#示例-frpc-ini-配置文件" class="headerlink" title="示例 frpc.ini 配置文件"></a>示例 frpc.ini 配置文件</h2><p>请详细阅读每条参数的说明并修改,错误的参数会直接导致 frp 无法启动.</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[common]</span><br><span class="line">server_addr = frp.freefrp.net</span><br><span class="line">server_port = 7000</span><br><span class="line">token = freefrp.net</span><br><span class="line"></span><br><span class="line"># 以上为frp服务器信息</span><br><span class="line"></span><br><span class="line"># 以下为本地内网客户端信息</span><br><span class="line"></span><br><span class="line"># 群晖DS1815+管理页面</span><br><span class="line"></span><br><span class="line">[DS1815_DSM_HTTP]</span><br><span class="line">type = http</span><br><span class="line">local_ip = 192.168.1.2</span><br><span class="line">local_port = 5000</span><br><span class="line"></span><br><span class="line">[DS1815_DSM_HTTPS]</span><br><span class="line">type = https</span><br><span class="line">local_ip = 192.168.1.2</span><br><span class="line">local_port = 5001</span><br><span class="line"># 群晖Drive 桌面客户端</span><br><span class="line"></span><br><span class="line">[DS1815_Drive_Desktop]</span><br><span class="line">type = tcp</span><br><span class="line">local_ip = 192.168.1.2</span><br><span class="line">local_port = 6690</span><br><span class="line">remote_port = 46690</span><br></pre></td></tr></table></figure>
+
+<p>按照以上进行修改之后保存</p>
+<h2 id="如何启动服务"><a href="#如何启动服务" class="headerlink" title="如何启动服务"></a>如何启动服务</h2><p>首先在桌面新建start.sh填入一下代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@echo off</span><br><span class="line">:home</span><br><span class="line">frpc -c frpc.ini</span><br><span class="line">goto home</span><br></pre></td></tr></table></figure>
+
+<p>然后把这个文件保存放入frp的文价夹内双击打开看是否有成功的标志。</p>
+<p>如果没什么问题话想长久用请看下面的进阶</p>
+<h2 id="进阶：如何启动服务而没有黑框"><a href="#进阶：如何启动服务而没有黑框" class="headerlink" title="进阶：如何启动服务而没有黑框"></a>进阶：如何启动服务而没有黑框</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@echo off</span><br><span class="line">if &quot;%1&quot; == &quot;h&quot; goto begin</span><br><span class="line">mshta vbscript:createobject(&quot;wscript.shell&quot;).run(&quot;&quot;&quot;%~nx0&quot;&quot; h&quot;,0)(window.close)&amp;&amp;exit</span><br><span class="line"></span><br><span class="line">:begin</span><br><span class="line">REM</span><br><span class="line">.\frpc.exe -c .\frpc.ini</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>这种方法也是需要每次开机双击这个文件才能用。如何开机自启请自行百度</strong></p>
+<h1 id="设置好如何使用"><a href="#设置好如何使用" class="headerlink" title="设置好如何使用"></a>设置好如何使用</h1><p>win10为例—-设置—–系统—-远程控制——设置电脑接入电源永不休眠—。</p>
+<p>手机和其他设备控制电脑—-下载微软远程桌面app</p>
+<p><strong>电脑控制这个电脑直接电脑搜索远程桌面名称填  frp.freefrp.net  账号密码是你的微软账号密码</strong>。</p>
+]]></content>
       <categories>
         <category>电脑</category>
       </categories>
