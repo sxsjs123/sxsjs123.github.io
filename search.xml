@@ -349,4 +349,32 @@
         <tag>超级管理员</tag>
       </tags>
   </entry>
+  <entry>
+    <title>随身WIFI踩坑日记</title>
+    <url>/2022/10/19/2022-10-19-wifi/</url>
+    <content><![CDATA[<h1 id="随身WIFI踩坑日记"><a href="#随身WIFI踩坑日记" class="headerlink" title="随身WIFI踩坑日记"></a>随身WIFI踩坑日记</h1><p>前言：听说了随身wifi棒子可以免流可以当小型的Linux服务器使用就有了这篇文章。</p>
+<span id="more"></span>
+
+<h1 id="首先wifi棒子分为两种芯片方案"><a href="#首先wifi棒子分为两种芯片方案" class="headerlink" title="首先wifi棒子分为两种芯片方案"></a>首先wifi棒子分为两种芯片方案</h1><p>①高通骁龙410—可以免流可以刷成小型的Linux服务器</p>
+<p>②中兴微方案什么都不能干（<u>可以改成自己的卡上网下面有方法</u>）</p>
+<h1 id="首先是中兴微方案（主要是晓龙的还没有到）"><a href="#首先是中兴微方案（主要是晓龙的还没有到）" class="headerlink" title="首先是中兴微方案（主要是晓龙的还没有到）"></a>首先是中兴微方案（主要是晓龙的还没有到）</h1><h2 id="产品来源总结"><a href="#产品来源总结" class="headerlink" title="产品来源总结"></a>产品来源总结</h2><p>从京东上买到的（宝保光旗舰店）随身wifi。效果非常的不好。<strong>刷机啥的你就别想了</strong>。</p>
+<p>首先这款wifi棒子后台是阉割的好多功能是被隐藏的。我们如果要<strong>使用自己的卡</strong>就需要输入密码去切换esmi和实体smi卡。下面提供两种方法。</p>
+<h3 id="①进入wifi棒子后台"><a href="#①进入wifi棒子后台" class="headerlink" title="①进入wifi棒子后台"></a>①进入wifi棒子后台</h3><p>如：<a href="http://192.168.8.1/">http://192.168.8.1</a>  找到切换卡的按钮输入<strong>密码</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">XBX888</span><br></pre></td></tr></table></figure>
+
+<p>进行切换</p>
+<h3 id="②还是进入wifi棒子后台—–需要使用电脑"><a href="#②还是进入wifi棒子后台—–需要使用电脑" class="headerlink" title="②还是进入wifi棒子后台—–需要使用电脑"></a>②还是进入wifi棒子后台—–需要使用电脑</h3><p>如：<a href="http://192.168.8.1/">http://192.168.8.1</a> 按F12进入浏览器的开发者调试工具箱找到<strong>Console</strong>选项卡在下面输入</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">$(<span class="string">&quot;*&quot;</span>).show();</span><br></pre></td></tr></table></figure>
+
+<p>就会发现好多的隐藏功能就打开了，点击一个选项卡之后<strong>就需要重复操作一下</strong>不然东西还是会被隐藏。</p>
+<p>用这个方法找到<strong>esmi切换选项卡可以直接的进行切换</strong>不需要输入密码。</p>
+<p>待更新。。。。。。。。。。</p>
+]]></content>
+      <categories>
+        <category>小玩意</category>
+      </categories>
+      <tags>
+        <tag>wifi</tag>
+      </tags>
+  </entry>
 </search>
